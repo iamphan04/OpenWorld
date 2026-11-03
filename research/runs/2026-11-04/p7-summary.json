@@ -1,0 +1,279 @@
+{
+  "cases": 960,
+  "safe_cases": 640,
+  "safe_max": 4,
+  "unsafe_max": 8,
+  "unsafe_breaches": 90,
+  "wall_seconds": 15.251624000025913,
+  "cpu_seconds": 15.09375,
+  "recovered_receipts": 1828,
+  "receipt_lookups": 4844,
+  "event_inspections": 516072,
+  "reconciliation_cpu_seconds": 0.046875,
+  "rows": [
+    {
+      "policy": "always_offer",
+      "regime": "cooperative",
+      "notification_only": {
+        "reward": 0.5420999999999999,
+        "unresolved": 34.7,
+        "peak_actual": 1,
+        "donations": 180.7
+      },
+      "exact_receipts": {
+        "reward": 0.6,
+        "unresolved": 15.9,
+        "peak_actual": 1,
+        "donations": 200.0
+      },
+      "unsafe_timeout": {
+        "reward": 0.6,
+        "unresolved": 17.8,
+        "peak_actual": 1,
+        "donations": 200.0
+      }
+    },
+    {
+      "policy": "always_offer",
+      "regime": "hostile",
+      "notification_only": {
+        "reward": -0.05,
+        "unresolved": 5.4,
+        "peak_actual": 4,
+        "donations": 40.0
+      },
+      "exact_receipts": {
+        "reward": -0.05,
+        "unresolved": 5.4,
+        "peak_actual": 4,
+        "donations": 40.0
+      },
+      "unsafe_timeout": {
+        "reward": -0.057625,
+        "unresolved": 0.0,
+        "peak_actual": 7,
+        "donations": 46.1
+      }
+    },
+    {
+      "policy": "always_offer",
+      "regime": "recovery",
+      "notification_only": {
+        "reward": -0.05,
+        "unresolved": 5.4,
+        "peak_actual": 4,
+        "donations": 40.0
+      },
+      "exact_receipts": {
+        "reward": -0.05,
+        "unresolved": 5.4,
+        "peak_actual": 4,
+        "donations": 40.0
+      },
+      "unsafe_timeout": {
+        "reward": -0.057625,
+        "unresolved": 0.0,
+        "peak_actual": 7,
+        "donations": 46.1
+      }
+    },
+    {
+      "policy": "always_offer",
+      "regime": "mixed",
+      "notification_only": {
+        "reward": 0.066675,
+        "unresolved": 9.6,
+        "peak_actual": 4,
+        "donations": 72.8
+      },
+      "exact_receipts": {
+        "reward": 0.0733,
+        "unresolved": 5.8,
+        "peak_actual": 4,
+        "donations": 81.1
+      },
+      "unsafe_timeout": {
+        "reward": 0.08175,
+        "unresolved": 0.4,
+        "peak_actual": 8,
+        "donations": 92.7
+      }
+    },
+    {
+      "policy": "fixed_probe",
+      "regime": "cooperative",
+      "notification_only": {
+        "reward": 0.5420999999999999,
+        "unresolved": 34.7,
+        "peak_actual": 1,
+        "donations": 180.7
+      },
+      "exact_receipts": {
+        "reward": 0.6,
+        "unresolved": 15.9,
+        "peak_actual": 1,
+        "donations": 200.0
+      },
+      "unsafe_timeout": {
+        "reward": 0.6,
+        "unresolved": 17.8,
+        "peak_actual": 1,
+        "donations": 200.0
+      }
+    },
+    {
+      "policy": "fixed_probe",
+      "regime": "hostile",
+      "notification_only": {
+        "reward": -0.05,
+        "unresolved": 5.6,
+        "peak_actual": 4,
+        "donations": 40.0
+      },
+      "exact_receipts": {
+        "reward": -0.05,
+        "unresolved": 5.6,
+        "peak_actual": 4,
+        "donations": 40.0
+      },
+      "unsafe_timeout": {
+        "reward": -0.057125,
+        "unresolved": 0.0,
+        "peak_actual": 7,
+        "donations": 45.7
+      }
+    },
+    {
+      "policy": "fixed_probe",
+      "regime": "recovery",
+      "notification_only": {
+        "reward": -0.02455,
+        "unresolved": 6.2,
+        "peak_actual": 4,
+        "donations": 43.1
+      },
+      "exact_receipts": {
+        "reward": -0.02245,
+        "unresolved": 4.9,
+        "peak_actual": 4,
+        "donations": 43.8
+      },
+      "unsafe_timeout": {
+        "reward": -0.008499999999999999,
+        "unresolved": 0.0,
+        "peak_actual": 7,
+        "donations": 51.0
+      }
+    },
+    {
+      "policy": "fixed_probe",
+      "regime": "mixed",
+      "notification_only": {
+        "reward": 0.05714999999999999,
+        "unresolved": 9.5,
+        "peak_actual": 4,
+        "donations": 67.5
+      },
+      "exact_receipts": {
+        "reward": 0.0616,
+        "unresolved": 6.1,
+        "peak_actual": 4,
+        "donations": 73.8
+      },
+      "unsafe_timeout": {
+        "reward": 0.068475,
+        "unresolved": 0.7,
+        "peak_actual": 8,
+        "donations": 80.2
+      }
+    },
+    {
+      "policy": "random_probe",
+      "regime": "cooperative",
+      "notification_only": {
+        "reward": 0.5420999999999999,
+        "unresolved": 34.7,
+        "peak_actual": 1,
+        "donations": 180.7
+      },
+      "exact_receipts": {
+        "reward": 0.6,
+        "unresolved": 15.9,
+        "peak_actual": 1,
+        "donations": 200.0
+      },
+      "unsafe_timeout": {
+        "reward": 0.6,
+        "unresolved": 17.8,
+        "peak_actual": 1,
+        "donations": 200.0
+      }
+    },
+    {
+      "policy": "random_probe",
+      "regime": "hostile",
+      "notification_only": {
+        "reward": -0.049625,
+        "unresolved": 5.8,
+        "peak_actual": 4,
+        "donations": 39.7
+      },
+      "exact_receipts": {
+        "reward": -0.049625,
+        "unresolved": 5.8,
+        "peak_actual": 4,
+        "donations": 39.7
+      },
+      "unsafe_timeout": {
+        "reward": -0.05600000000000001,
+        "unresolved": 0.4,
+        "peak_actual": 7,
+        "donations": 44.8
+      }
+    },
+    {
+      "policy": "random_probe",
+      "regime": "recovery",
+      "notification_only": {
+        "reward": -0.03155,
+        "unresolved": 6.8,
+        "peak_actual": 4,
+        "donations": 41.9
+      },
+      "exact_receipts": {
+        "reward": -0.029449999999999997,
+        "unresolved": 6.3,
+        "peak_actual": 4,
+        "donations": 42.6
+      },
+      "unsafe_timeout": {
+        "reward": -0.021175000000000003,
+        "unresolved": 1.8,
+        "peak_actual": 7,
+        "donations": 48.9
+      }
+    },
+    {
+      "policy": "random_probe",
+      "regime": "mixed",
+      "notification_only": {
+        "reward": 0.05319999999999999,
+        "unresolved": 9.9,
+        "peak_actual": 4,
+        "donations": 64.2
+      },
+      "exact_receipts": {
+        "reward": 0.0612,
+        "unresolved": 6.7,
+        "peak_actual": 4,
+        "donations": 71.4
+      },
+      "unsafe_timeout": {
+        "reward": 0.064725,
+        "unresolved": 2.6,
+        "peak_actual": 7,
+        "donations": 76.4
+      }
+    }
+  ]
+}

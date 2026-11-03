@@ -1,5 +1,9 @@
 # OpenWorld — Canonical Project Continuity
 
+**Dated continuation:** the [2026-11-04 fork snapshot](RESEARCH-SNAPSHOT-20261104.md)
+records current `iamphan04/OpenWorld` source and P7 measurements. The older
+repository references and statuses below describe the original upstream session.
+
 **Status:** Consolidated working context; not a proof of implementation or scientific performance.  
 **Updated:** 2026-10-28  
 **Repository:** https://github.com/CocAgent/OpenWorld  

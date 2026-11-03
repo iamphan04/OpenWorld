@@ -1,0 +1,2 @@
+Command: C:\msys64\ucrt64\bin\python.exe scripts/check_repository.py
+PASS: required project structure is present

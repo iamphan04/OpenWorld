@@ -1,0 +1,15 @@
+Command: C:\msys64\ucrt64\bin\python.exe -m unittest discover -s tests -p test_protocol_revocation.py -v
+test_expiry_is_still_enforced (test_protocol_revocation.PersistedRevocationTests.test_expiry_is_still_enforced) ... ok
+test_invalid_store_and_timestamp (test_protocol_revocation.PersistedRevocationTests.test_invalid_store_and_timestamp) ... ok
+test_missing_registry_fails_closed (test_protocol_revocation.PersistedRevocationTests.test_missing_registry_fails_closed) ... ok
+test_missing_table_fails_closed (test_protocol_revocation.PersistedRevocationTests.test_missing_table_fails_closed) ... ok
+test_revocation_idempotent_and_namespace_bound (test_protocol_revocation.PersistedRevocationTests.test_revocation_idempotent_and_namespace_bound) ... ok
+test_revocation_survives_new_authority (test_protocol_revocation.PersistedRevocationTests.test_revocation_survives_new_authority) ... ok
+test_revocation_survives_new_python_process (test_protocol_revocation.PersistedRevocationTests.test_revocation_survives_new_python_process) ... ok
+test_revocation_visible_to_already_running_authority (test_protocol_revocation.PersistedRevocationTests.test_revocation_visible_to_already_running_authority) ... ok
+test_unrevoked_token_has_same_scope_checks (test_protocol_revocation.PersistedRevocationTests.test_unrevoked_token_has_same_scope_checks) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.268s
+
+OK

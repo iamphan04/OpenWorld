@@ -1,5 +1,8 @@
 # OpenWorld Decision and Hypothesis Ledger
 
+**2026-11-04 continuation:** [current fork snapshot](RESEARCH-SNAPSHOT-20261104.md).
+P7 is measured synthetic evidence, not ratification of proposed shared contracts.
+
 This ledger is a **living summary**. It does not supersede normative ADRs in [docs/DECISIONS.md](../DECISIONS.md) or the proposed RFC-006. A prior chat recommendation is not an adopted interface, and a merged code change is not a production qualification.
 
 | ID | Decision or hypothesis | State | Evidence / next action |

@@ -1,0 +1,12 @@
+Command: C:\msys64\ucrt64\bin\python.exe -m unittest discover -s tests -p test_w5_world_recovery.py -v
+test_benchmark_three_graph_shapes_have_replay (test_w5_world_recovery.WorldRecoveryProcessTests.test_benchmark_three_graph_shapes_have_replay) ... ok
+test_new_process_recovers_exact_simulated_state (test_w5_world_recovery.WorldRecoveryProcessTests.test_new_process_recovers_exact_simulated_state) ... ok
+test_revocation_not_durable_is_known_risk (test_w5_world_recovery.WorldRecoveryProcessTests.test_revocation_not_durable_is_known_risk) ... ok
+test_sqlite_backup_restore_is_state_equivalent (test_w5_world_recovery.WorldRecoveryProcessTests.test_sqlite_backup_restore_is_state_equivalent) ... ok
+test_two_processes_conflicting_forks_cannot_both_commit (test_w5_world_recovery.WorldRecoveryProcessTests.test_two_processes_conflicting_forks_cannot_both_commit) ... ok
+test_uncommitted_process_exit_rolls_back_sqlite (test_w5_world_recovery.WorldRecoveryProcessTests.test_uncommitted_process_exit_rolls_back_sqlite) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.503s
+
+OK

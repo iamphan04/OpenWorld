@@ -1,0 +1,14 @@
+Command: C:\msys64\ucrt64\bin\python.exe -m unittest discover -s tests -p test_witness_recovery.py -v
+test_consistent_head_is_only_a_consistency_check (test_witness_recovery.WitnessRecoveryTests.test_consistent_head_is_only_a_consistency_check) ... ok
+test_missing_authority_data_fails_closed (test_witness_recovery.WitnessRecoveryTests.test_missing_authority_data_fails_closed) ... ok
+test_missing_witness_denies (test_witness_recovery.WitnessRecoveryTests.test_missing_witness_denies) ... ok
+test_mutation_then_consistent_head (test_witness_recovery.WitnessRecoveryTests.test_mutation_then_consistent_head) ... ok
+test_pending_changed_still_requires_review (test_witness_recovery.WitnessRecoveryTests.test_pending_changed_still_requires_review) ... ok
+test_pending_unchanged_still_requires_review (test_witness_recovery.WitnessRecoveryTests.test_pending_unchanged_still_requires_review) ... ok
+test_rollback_clean_digest_does_not_release_pending (test_witness_recovery.WitnessRecoveryTests.test_rollback_clean_digest_does_not_release_pending) ... ok
+test_unfenced_mutation_reports_divergence (test_witness_recovery.WitnessRecoveryTests.test_unfenced_mutation_reports_divergence) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.114s
+
+OK

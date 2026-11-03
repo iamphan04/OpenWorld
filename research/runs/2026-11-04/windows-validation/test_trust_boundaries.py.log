@@ -1,0 +1,36 @@
+Command: C:\msys64\ucrt64\bin\python.exe -m unittest discover -s tests -p test_trust_boundaries.py -v
+test_correct_snapshot (test_trust_boundaries.TestAnchoredExactLedger.test_correct_snapshot) ... ok
+test_delete_old_record_detected (test_trust_boundaries.TestAnchoredExactLedger.test_delete_old_record_detected) ... ok
+test_insert_after_anchor_fails_exact_checkpoint (test_trust_boundaries.TestAnchoredExactLedger.test_insert_after_anchor_fails_exact_checkpoint) ... ok
+test_modified_owner_field_detected (test_trust_boundaries.TestAnchoredExactLedger.test_modified_owner_field_detected) ... ok
+test_online_backup_includes_wal_records (test_trust_boundaries.TestAnchoredExactLedger.test_online_backup_includes_wal_records) ... ok
+test_online_backup_restore_snapshot (test_trust_boundaries.TestAnchoredExactLedger.test_online_backup_restore_snapshot) ... ok
+test_payload_and_hash_tampering (test_trust_boundaries.TestAnchoredExactLedger.test_payload_and_hash_tampering) ... ok
+test_payload_tampering (test_trust_boundaries.TestAnchoredExactLedger.test_payload_tampering) ... ok
+test_valid_empty_anchor_has_no_historical_guarantee (test_trust_boundaries.TestAnchoredExactLedger.test_valid_empty_anchor_has_no_historical_guarantee) ... ok
+test_wrong_key (test_trust_boundaries.TestAnchoredExactLedger.test_wrong_key) ... ok
+test_wrong_owner (test_trust_boundaries.TestAnchoredExactLedger.test_wrong_owner) ... ok
+test_action_escalation_rejected (test_trust_boundaries.TestCapabilityGrants.test_action_escalation_rejected) ... ok
+test_cross_owner_rejected (test_trust_boundaries.TestCapabilityGrants.test_cross_owner_rejected) ... ok
+test_cross_resource_rejected (test_trust_boundaries.TestCapabilityGrants.test_cross_resource_rejected) ... ok
+test_duplicate_json_keys (test_trust_boundaries.TestCapabilityGrants.test_duplicate_json_keys) ... ok
+test_expiration_boundary (test_trust_boundaries.TestCapabilityGrants.test_expiration_boundary) ... ok
+test_max_ttl (test_trust_boundaries.TestCapabilityGrants.test_max_ttl) ... ok
+test_revocation (test_trust_boundaries.TestCapabilityGrants.test_revocation) ... ok
+test_tampered_claim (test_trust_boundaries.TestCapabilityGrants.test_tampered_claim) ... ok
+test_tampered_signature (test_trust_boundaries.TestCapabilityGrants.test_tampered_signature) ... ok
+test_unknown_action_rejected (test_trust_boundaries.TestCapabilityGrants.test_unknown_action_rejected) ... ok
+test_unknown_caller_rejected (test_trust_boundaries.TestCapabilityGrants.test_unknown_caller_rejected) ... ok
+test_valid_exact_scope (test_trust_boundaries.TestCapabilityGrants.test_valid_exact_scope) ... ok
+test_weak_key_rejected (test_trust_boundaries.TestCapabilityGrants.test_weak_key_rejected) ... ok
+test_wrong_audience (test_trust_boundaries.TestCapabilityGrants.test_wrong_audience) ... ok
+test_wrong_verification_key (test_trust_boundaries.TestCapabilityGrants.test_wrong_verification_key) ... ok
+test_read_event_scoped (test_trust_boundaries.TestScopedMemoryReader.test_read_event_scoped) ... ok
+test_read_state_scoped (test_trust_boundaries.TestScopedMemoryReader.test_read_state_scoped) ... ok
+test_spoofed_principal_rejected (test_trust_boundaries.TestScopedMemoryReader.test_spoofed_principal_rejected) ... ok
+test_wrong_action_rejected (test_trust_boundaries.TestScopedMemoryReader.test_wrong_action_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.142s
+
+OK

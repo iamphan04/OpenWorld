@@ -1,0 +1,9 @@
+Command: C:\msys64\ucrt64\bin\python.exe -m unittest discover -s tests -p test_benchmark_metrics.py -v
+test_import_and_json_metric_when_resource_is_unavailable (test_benchmark_metrics.PortableBenchmarkMetricsTests.test_import_and_json_metric_when_resource_is_unavailable) ... ok
+test_peak_rss_preserves_known_platform_units (test_benchmark_metrics.PortableBenchmarkMetricsTests.test_peak_rss_preserves_known_platform_units) ... ok
+test_unknown_platform_does_not_guess_units (test_benchmark_metrics.PortableBenchmarkMetricsTests.test_unknown_platform_does_not_guess_units) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

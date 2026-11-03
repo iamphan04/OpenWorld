@@ -1,5 +1,10 @@
 # Session and Source Register
 
+**2026-11-04 evidence addition:** [fork snapshot](RESEARCH-SNAPSHOT-20261104.md)
+and [P7 measured report](../evaluation/P7-HOLDOUT-RESULTS-20261104.md) link current
+source, local execution logs and raw synthetic cases. Earlier pending-access
+conversation sources remain pending; no unavailable transcript was imported.
+
 **Last review:** 2026-10-28  
 **Purpose:** Track the provenance of OpenWorld planning decisions and previous conversations without treating inaccessible links as read transcripts.
 

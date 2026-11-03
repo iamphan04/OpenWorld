@@ -85,6 +85,23 @@ python -m unittest discover -s tests -p 'test_p6_risk_budget.py' -v
 python benchmarks/p6_risk_budget.py --seeds 10 --seed-start 10101 --out p6-cases.json
 ```
 
+## P7 research — exact receipt reconciliation
+
+The [2026-11-04 research snapshot](docs/project/RESEARCH-SNAPSHOT-20261104.md)
+reconciles this fork with its historical upstream context. The
+[P7 measured report](docs/evaluation/P7-HOLDOUT-RESULTS-20261104.md) evaluates
+**960 fresh-seed cases** separating missing policy notifications from permanent
+budget exhaustion. Exact positive receipt recovery restores cooperative reward
+in the tested fixture, while an unsafe timeout control breaches actual exposure
+in 90/320 cases. Reconciliation does not undo confirmed losses or guarantee
+improved reward for every partner/seed. All settlement remains immediate,
+single-owner and SIMULATED.
+
+```bash
+python -m unittest discover -s tests -p 'test_p7_receipt_reconciliation.py' -v
+python benchmarks/p7_receipt_reconciliation.py --split holdout --out p7-holdout.json
+```
+
 ## Experimental compositional world research
 
 [RFC-007: Mathematical Foundations](docs/math/RFC-007-OPENWORLD-MATHEMATICAL-FOUNDATIONS.md) is the existing proposed W2 research architecture. The independent [EXPR-001 fixture](docs/experiments/COMPOSABLE-WORLD-FIXTURE.md), [mathematical notes](docs/math/COMPOSITIONAL-WORLD-NOTES.md), and [dependency-free example](examples/composable_world.py) explore only pure typed composition, agent blueprints and resource transfer/replay. They do **not** constitute approved OWP/OCP standards or production SuperKernel code.

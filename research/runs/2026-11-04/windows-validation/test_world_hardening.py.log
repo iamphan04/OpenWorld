@@ -1,0 +1,17 @@
+Command: C:\msys64\ucrt64\bin\python.exe -m unittest discover -s tests -p test_world_hardening.py -v
+test_adversarial_invalid_action_cannot_spend (test_world_hardening.W3HardeningTests.test_adversarial_invalid_action_cannot_spend) ... ok
+test_attacker_recomputed_digest_still_fails_replay (test_world_hardening.W3HardeningTests.test_attacker_recomputed_digest_still_fails_replay) ... ok
+test_budget_above_default_has_reproducible_replay (test_world_hardening.W3HardeningTests.test_budget_above_default_has_reproducible_replay) ... ok
+test_budget_mismatch_is_rejected (test_world_hardening.W3HardeningTests.test_budget_mismatch_is_rejected) ... ok
+test_checkpoint_with_no_external_input_is_refused (test_world_hardening.W3HardeningTests.test_checkpoint_with_no_external_input_is_refused) ... ok
+test_conflicting_payloads_same_id_are_all_rejected (test_world_hardening.W3HardeningTests.test_conflicting_payloads_same_id_are_all_rejected) ... ok
+test_identical_retry_preserves_idempotency (test_world_hardening.W3HardeningTests.test_identical_retry_preserves_idempotency) ... ok
+test_payload_tamper_detected_by_digest (test_world_hardening.W3HardeningTests.test_payload_tamper_detected_by_digest) ... ok
+test_roundtrip_restart_simulation (test_world_hardening.W3HardeningTests.test_roundtrip_restart_simulation) ... ok
+test_save_rejects_conflicting_fork_and_rolls_back (test_world_hardening.W3HardeningTests.test_save_rejects_conflicting_fork_and_rolls_back) ... ok
+test_save_rejects_inconsistent_world (test_world_hardening.W3HardeningTests.test_save_rejects_inconsistent_world) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.088s
+
+OK

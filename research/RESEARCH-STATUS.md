@@ -6,6 +6,12 @@ These are **historical local experiments**, not validated product performance. T
 
 ## Open questions
 
+**2026-11-04 update:** see the [current fork research snapshot](../docs/project/RESEARCH-SNAPSHOT-20261104.md)
+and [P7 measured receipt-reconciliation results](../docs/evaluation/P7-HOLDOUT-RESULTS-20261104.md).
+The current local source has 462 executed tests with no unexpected failures
+(six skips, two known security expected failures), plus a 960-case fresh-seed
+synthetic holdout. These results do not resolve production or upstream acceptance gates.
+
 1. Which small memory representations preserve decision quality for a specified task family?
 2. Under what drift and activity patterns do adaptive predictors outperform simpler estimators?
 3. Can exact evidence and cross-agent collaboration coexist with owner-controlled privacy?

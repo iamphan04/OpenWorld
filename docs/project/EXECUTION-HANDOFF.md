@@ -1,5 +1,9 @@
 # OpenWorld Execution Handoff — Starting Point for Parallel Agent Work
 
+**Current continuation:** read the [2026-11-04 fork snapshot](RESEARCH-SNAPSHOT-20261104.md)
+before using the historical starting point below. It records fresh local
+validation and P7 outcomes without closing upstream review or security gates.
+
 **Snapshot date:** 2026-10-28  
 **Main reference when inspected:** `2b97fead0847054fa2b777973f4a6d59af10990f`  
 **Required owner review:** all production-facing actions and changes to common contracts.

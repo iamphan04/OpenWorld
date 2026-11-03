@@ -1,0 +1,181 @@
+{
+  "started_utc": "2026-11-03T20:19:40.223356+00:00",
+  "base_sha": "6daaea93abb3aa81391bac3c1192f7c4bb973c46",
+  "branch": "test/windows-local-validation-20261104",
+  "python": "3.14.7 (main, Aug  8 2026, 21:15:19)  [MINGW GCC UCRT 16.2.0 64 bit (AMD64)]",
+  "sqlite": "3.53.4",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu_count": 8,
+  "note": "Final full suite cancelled because root will validate all changes including P7 once. Earlier exploratory suite ran 450 tests: six missing-import errors subsequently fixed; six skips and two expected failures. This artifact contains final targeted checks.",
+  "results": [
+    {
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_benchmark_metrics.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.19227560004219413,
+      "log": "C:\\Users\\sunyn\\OneDrive\\Ta\u0300i li\u00ea\u0323u\\ChatGPT\\OpenWorld\\research\\runs\\2026-11-04\\windows-validation\\test_benchmark_metrics.py.log"
+    },
+    {
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_anti_rollback.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.3391785998828709,
+      "log": "C:\\Users\\sunyn\\OneDrive\\Ta\u0300i li\u00ea\u0323u\\ChatGPT\\OpenWorld\\research\\runs\\2026-11-04\\windows-validation\\test_anti_rollback.py.log"
+    },
+    {
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_protocol_revocation.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.4253963001538068,
+      "log": "C:\\Users\\sunyn\\OneDrive\\Ta\u0300i li\u00ea\u0323u\\ChatGPT\\OpenWorld\\research\\runs\\2026-11-04\\windows-validation\\test_protocol_revocation.py.log"
+    },
+    {
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_sec001_hypermemory_integration.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.2256554001942277,
+      "log": "C:\\Users\\sunyn\\OneDrive\\Ta\u0300i li\u00ea\u0323u\\ChatGPT\\OpenWorld\\research\\runs\\2026-11-04\\windows-validation\\test_sec001_hypermemory_integration.py.log"
+    },
+    {
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_sec002_storage_rollback.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.21945600002072752,
+      "log": "C:\\Users\\sunyn\\OneDrive\\Ta\u0300i li\u00ea\u0323u\\ChatGPT\\OpenWorld\\research\\runs\\2026-11-04\\windows-validation\\test_sec002_storage_rollback.py.log"
+    },
+    {
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_trust_boundaries.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.2971953998785466,
+      "log": "C:\\Users\\sunyn\\OneDrive\\Ta\u0300i li\u00ea\u0323u\\ChatGPT\\OpenWorld\\research\\runs\\2026-11-04\\windows-validation\\test_trust_boundaries.py.log"
+    },
+    {
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_w5_world_recovery.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.6748987999744713,
+      "log": "C:\\Users\\sunyn\\OneDrive\\Ta\u0300i li\u00ea\u0323u\\ChatGPT\\OpenWorld\\research\\runs\\2026-11-04\\windows-validation\\test_w5_world_recovery.py.log"
+    },
+    {
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_world_hardening.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.2676792999263853,
+      "log": "C:\\Users\\sunyn\\OneDrive\\Ta\u0300i li\u00ea\u0323u\\ChatGPT\\OpenWorld\\research\\runs\\2026-11-04\\windows-validation\\test_world_hardening.py.log"
+    },
+    {
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_witness_recovery.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.29665530007332563,
+      "log": "C:\\Users\\sunyn\\OneDrive\\Ta\u0300i li\u00ea\u0323u\\ChatGPT\\OpenWorld\\research\\runs\\2026-11-04\\windows-validation\\test_witness_recovery.py.log"
+    },
+    {
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "scripts/check_repository.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.05435150000266731,
+      "log": "C:\\Users\\sunyn\\OneDrive\\Ta\u0300i li\u00ea\u0323u\\ChatGPT\\OpenWorld\\research\\runs\\2026-11-04\\windows-validation\\layout.log"
+    },
+    {
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-m",
+        "compileall",
+        "-q",
+        "src",
+        "tests",
+        "benchmarks",
+        "examples"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.11279179994016886,
+      "log": "C:\\Users\\sunyn\\OneDrive\\Ta\u0300i li\u00ea\u0323u\\ChatGPT\\OpenWorld\\research\\runs\\2026-11-04\\windows-validation\\syntax.log"
+    }
+  ],
+  "finished_utc": "2026-11-03T20:19:43.516334+00:00"
+}

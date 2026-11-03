@@ -1,0 +1,11 @@
+Command: C:\msys64\ucrt64\bin\python.exe -m unittest discover -s tests -p test_sec001_hypermemory_integration.py -v
+test_external_identity_mismatch_fails_closed (test_sec001_hypermemory_integration.TestRealMemoryTrustBoundaries.test_external_identity_mismatch_fails_closed) ... ok
+test_five_agent_backup_and_anchor_recovery (test_sec001_hypermemory_integration.TestRealMemoryTrustBoundaries.test_five_agent_backup_and_anchor_recovery) ... ok
+test_isolated_other_owner_exact_events (test_sec001_hypermemory_integration.TestRealMemoryTrustBoundaries.test_isolated_other_owner_exact_events) ... ok
+test_real_store_has_scope_enforced_by_gateway (test_sec001_hypermemory_integration.TestRealMemoryTrustBoundaries.test_real_store_has_scope_enforced_by_gateway) ... ok
+test_rewritten_payload_and_hash_do_not_pass_external_anchor (test_sec001_hypermemory_integration.TestRealMemoryTrustBoundaries.test_rewritten_payload_and_hash_do_not_pass_external_anchor) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.071s
+
+OK

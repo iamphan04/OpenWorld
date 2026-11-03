@@ -1,0 +1,69 @@
+{
+  "source_revision": "f644615e3a77c4eac88915aed9e6daf7af4e7f72",
+  "base_revision": "6daaea93abb3aa81391bac3c1192f7c4bb973c46",
+  "local_branch": "research/p7-budget-feedback-20261104",
+  "date": "2026-11-04",
+  "timezone": "Asia/Saigon",
+  "python": "3.14.7 (main, Aug  8 2026, 21:15:19)  [MINGW GCC UCRT 16.2.0 64 bit (AMD64)]",
+  "sqlite": "3.53.4",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "checks": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "tests_run": 462,
+      "skipped": 6,
+      "expected_failures": 2,
+      "unexpected_failures": 0,
+      "elapsed_seconds": 101.144,
+      "log": "final-tests.log"
+    },
+    {
+      "command": "python -m unittest discover -s tests -p test_p7_receipt_reconciliation.py -v",
+      "exit_code": 0,
+      "tests_run": 9,
+      "log": "p7-tests.log"
+    },
+    {
+      "command": "python benchmarks/p7_receipt_reconciliation.py --split development --out research/runs/2026-11-04/p7-development.json",
+      "exit_code": 0,
+      "cases": 192
+    },
+    {
+      "command": "python benchmarks/p7_receipt_reconciliation.py --split holdout --out research/runs/2026-11-04/p7-holdout.json",
+      "exit_code": 0,
+      "cases": 960
+    },
+    {
+      "command": "python scripts/check_repository.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python -m compileall -q src tests benchmarks examples",
+      "exit_code": 0
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0
+    }
+  ],
+  "raw_consistency": {
+    "source_digests_matched": 71,
+    "safe_cases": 640,
+    "safe_cap_breaches": 0,
+    "unsafe_cases": 320,
+    "unsafe_cap_breaches": 90,
+    "receipt_count": 1828,
+    "receipt_origin_timing_and_uniqueness": "PASS",
+    "observation_accounting": "PASS",
+    "local_markdown_targets": "PASS"
+  },
+  "artifact_sha256": {
+    "baseline-tests.log": "748f67788f041348891be7d57d05ba479803dedcc0408e7aaee243c9afb89042",
+    "final-tests.log": "52141b0c2f7bf40d5bf1951687a0bd984bb736368b8d1e721f7f9db89cd12e93",
+    "p7-development.json": "268c45e1bdaea569e9aeefdea275fb4802b3d5adf0385a4a2119c3004d6bdb63",
+    "p7-holdout.json": "4f84815f0b8991c2ac267b7e240a80a1841e4616eef93de0edea53209de21f55",
+    "p7-summary.json": "38c528cedbf2b5f50522504a3200501010946b03f653231058a2148d3c125201",
+    "p7-tests.log": "40b264529dd6ac7f9598a45ad059cc47e1cc5f11d17b01e47cc865a078c1d38b"
+  }
+}

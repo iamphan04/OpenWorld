@@ -1,0 +1,11 @@
+Command: C:\msys64\ucrt64\bin\python.exe -m unittest discover -s tests -p test_sec002_storage_rollback.py -v
+test_known_negative_grant_consumption_and_effect_are_not_atomic (test_sec002_storage_rollback.Sec002StorageRollbackTests.test_known_negative_grant_consumption_and_effect_are_not_atomic)
+Known gap: grant debit commits before a downstream action fails. ... expected failure
+test_known_negative_restore_before_revocation_must_still_deny (test_sec002_storage_rollback.Sec002StorageRollbackTests.test_known_negative_restore_before_revocation_must_still_deny)
+Known gap: an earlier database snapshot resurrects a valid capability. ... expected failure
+test_normal_restart_preserves_revocation (test_sec002_storage_rollback.Sec002StorageRollbackTests.test_normal_restart_preserves_revocation) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.059s
+
+OK (expected failures=2)

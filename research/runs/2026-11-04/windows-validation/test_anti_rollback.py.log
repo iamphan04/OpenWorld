@@ -1,0 +1,18 @@
+Command: C:\msys64\ucrt64\bin\python.exe -m unittest discover -s tests -p test_anti_rollback.py -v
+test_fresh_genesis_is_explicit (test_anti_rollback.AntiRollbackTests.test_fresh_genesis_is_explicit) ... ok
+test_initial_fingerprint_changes_with_security_mutation (test_anti_rollback.AntiRollbackTests.test_initial_fingerprint_changes_with_security_mutation) ... ok
+test_loss_of_witness_cannot_be_reprovisioned_on_nonempty (test_anti_rollback.AntiRollbackTests.test_loss_of_witness_cannot_be_reprovisioned_on_nonempty) ... ok
+test_missing_witness_rejects (test_anti_rollback.AntiRollbackTests.test_missing_witness_rejects) ... ok
+test_normal_issue_revoke_and_restart (test_anti_rollback.AntiRollbackTests.test_normal_issue_revoke_and_restart) ... ok
+test_pending_after_commit_before_finalize_denies (test_anti_rollback.AntiRollbackTests.test_pending_after_commit_before_finalize_denies) ... ok
+test_pending_after_effect_failure_denies (test_anti_rollback.AntiRollbackTests.test_pending_after_effect_failure_denies) ... ok
+test_raw_db_bypass_is_detected_but_not_prevented (test_anti_rollback.AntiRollbackTests.test_raw_db_bypass_is_detected_but_not_prevented) ... ok
+test_refuse_bootstrap_after_restore (test_anti_rollback.AntiRollbackTests.test_refuse_bootstrap_after_restore) ... ok
+test_restored_backup_after_consumption_denied (test_anti_rollback.AntiRollbackTests.test_restored_backup_after_consumption_denied) ... ok
+test_restored_backup_after_revocation_denied (test_anti_rollback.AntiRollbackTests.test_restored_backup_after_revocation_denied) ... ok
+test_stale_expected_fence_denied (test_anti_rollback.AntiRollbackTests.test_stale_expected_fence_denied) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.178s
+
+OK
