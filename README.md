@@ -1,127 +1,127 @@
 # OpenWorld
 
-**An open ecosystem for adaptive, collaborative, and evolving AI agents.**
+**A local research toolkit for agents that remember, adapt and cooperate.**
 
-OpenWorld is an independent, experimental open-source project exploring persistent agent identity, auditable memory, online adaptation, resource-aware reasoning, and collaboration. It is **not production ready**.
+OpenWorld explores how persistent AI agents can keep auditable memories, learn from interactions and collaborate within explicit resource limits. The long-term goal is an open agent ecosystem; the current implementation is a **CPU-only experimental Python toolkit** with reproducible synthetic worlds and benchmarks.
 
-## Core components
+An agent has its own identity, history, state and permissions. Many agents can share the same inference engine. A separate foundation model for every agent is not required.
 
-| Component | Responsibility |
-|---|---|
-| **SuperKernel** | Agent lifecycle, policy, tools, budgets, and scheduling |
-| **HyperMemory** | Exact historical evidence plus compact predictive memory |
-| **MathKernel** | Stochastic processes, Bayesian learning, predictive state, information theory |
-| **World Runtime** | Reproducible environments, event queues, sparse social interactions |
-| **Open Protocols** | Capability-based interoperability and trusted interfaces |
+**Status:** research prototype, not production ready. The included experiments run without a GPU, model API key or paid service.
 
-An agent identity is **not** a dedicated foundation model. Agents may share inference engines while retaining separate memories, permissions, and histories.
+## Start here
 
-## Getting started
-
-Requires Python 3.11+; no GPU, model key, or paid GitHub Actions.
+Requires **Python 3.11+**. The default tests and examples use the Python standard library. The optional live PostgreSQL pilot has separate setup requirements.
 
 ```bash
-python -m unittest discover -s tests -v
+git clone https://github.com/iamphan04/OpenWorld.git
+cd OpenWorld
+
+# Run a small replayable world.
+python examples/world/demo.py --agents 30 --ticks 20
+
+# Check the repository and run the test suite.
 python scripts/check_repository.py
+python -m unittest discover -s tests -v
 ```
 
-See [Architecture](docs/ARCHITECTURE.md), [Workstreams](docs/WORKSTREAMS.md), [Roadmap](docs/ROADMAP.md), [Research limitations](research/RESEARCH-STATUS.md), and [Contributing](CONTRIBUTING.md).
-
-## Research foundations and related projects
-
-The [curated research map](docs/research/RELATED-RESEARCH-AND-PROJECTS.md) includes **16 foundational papers** plus newer and specialized references on applied category theory, Markov categories, POSGs, multi-agent environments, generative societies, quality-diversity and co-evolution, plus candidate open-source implementations. It maps each publication to a falsifiable OpenWorld experiment and clearly distinguishes prior art from OpenWorld outcomes.
-
-The [October 2026 session synthesis](docs/project/SESSION-SYNTHESIS-20261028.md) reconciles the owner-supplied design iterations: an open strategic game, local-first community worlds, agent genesis, the trusted SuperKernel and optional compositional mathematics. **OpenWorld** is the canonical project name; "Open Civilization Protocol" (OCP) and "OpenWorld Protocol" (OWP) remain unratified design labels. Neither social evolution nor federation is a shipped feature.
-
-## Population learning and agent genome — research proposal
-
-The [population representation and typed agent-DNA design](docs/research/POPULATION-REPRESENTATION-AND-AGENT-DNA.md) assesses mean-field MARL, empirical characteristic functions, kernel mean embeddings, the owner's QID/FQID references, and why neither Riemann nor quantum computing is a prerequisite. The optional [Python research fixture](src/openworld_superkernel/population_repr.py) implements a **lossy group distribution sketch** and an **immutable content-addressed genome blueprint**, not learned intelligence, identity, permissions or a production protocol. See [session synthesis addendum](docs/project/SESSION-SYNTHESIS-20261028.md#7-october-29-2026--population-learning-and-mathematical-representation-refinement).
-
-~~~sh
-python -m unittest discover -s tests -p 'test_population_repr.py' -v
-~~~
-
-## W5 population representation benchmark (experimental)
-
-[Issue #44](https://github.com/CocAgent/OpenWorld/issues/44) evaluates whether simple aggregate means and histograms are sufficient, or whether [empirical characteristic functions and random Fourier features](docs/evaluation/W5-POPULATION-REPRESENTATION-BASELINES.md) improve task-specific predictions under matching synthetic train/holdout seeds. The benchmark is **supervised synthetic regression only**, not learned multi-agent RL or proof of population scalability.
-
-Run the bounded [W5 benchmark](benchmarks/w5_population_repr.py) on a local CPU to generate raw JSON evidence. Neither ECF nor Agent Genome is a privileged identity, trusted history or default world-state API.
-
-## P1 — Online population-agent learning (research)
-
-The [P1 learning study](docs/evaluation/P1-THIRTY-AGENT-ONLINE-LEARNING.md) extends the earlier [W5 distribution benchmark](docs/evaluation/W5-POPULATION-REPRESENTATION-BASELINES.md) from frozen supervised prediction into a **synthetic 30-agent contextual bandit**. Agents select binary actions and update a role-shared policy using only observed chosen-action rewards. No-summary, grouped mean, histogram and empirical characteristic-function summaries are assessed on disjoint world seeds.
-
-This is an **offline learning positive control**, not self-evolving agents, multi-agent world training, proof of societal emergence, trusted authentication or a shipped game.
-
-~~~sh
-python -m unittest discover -s tests -p 'test_p1_population_learning.py' -v
-python benchmarks/p1_population_learning.py --agents 30 --train-ticks 160 --holdout-ticks 60 --seeds 3
-~~~
-
-## W3 P0 — Local population connections (research only)
-
-[Population Links P0](docs/world/W3-POPULATION-LINKS-P0.md) turns the earlier community/world/civilization ideas into one bounded experiment: **three agent groups in one local W3 world**, explicit directional contracts and same-owner, double resource-scoped capability checks. It reuses W3's sparse graph, immutable state, event provenance and deterministic replay. **No cross-owner transfer, federation, group privacy, learned cooperation or automatic institutional creation** is implemented.
+For a same-owner, three-population exchange example:
 
 ```bash
-python -m unittest discover -s tests -p 'test_population_links.py' -v
 python examples/populations/local_three_groups.py
 ```
 
-## P3 research — independently learning populations in a replayable world
+Run commands from the repository root. These examples use simulated agents and events; they do not call a language model or connect to other owners' worlds.
 
-[P3 mutual learning](docs/evaluation/P3-MUTUAL-LEARNING-W3.md) tests **20 separate donor/recipient learners among 30 registered synthetic agents** over four repeated rounds (eight W3 ticks) per episode. All transfers are simulated under one owner and go through the existing guarded W3 population router; learned policies receive delayed feedback after the recipient's actual action. This is not production MARL, automated institutions or cross-owner federation.
+## What is implemented
 
-~~~sh
-python -m unittest discover -s tests -p 'test_p3_mutual_learning_w3.py' -v
-python benchmarks/p3_mutual_learning_w3.py --train-episodes 20 --holdout-episodes 8 --rounds 4 --seeds 3
-~~~
+| Area | Current research implementation | Longer-term goal |
+|---|---|---|
+| HyperMemory | Exact event records, compact predictors, online adaptation and SQLite experiments | Task-aware memory with measured quality and cost |
+| MathKernel | Finite stochastic kernels, belief updates and population representation experiments | Formal, testable models of agent decisions |
+| World Runtime | Sparse interactions, resource transfers, deterministic replay and checkpoints | Persistent environments with reliable scheduling |
+| Trust and protocols | Scoped capability, revocation, transaction and rollback reference implementations | Reviewed identity, consent and interoperability |
+| Evaluation | P1-P7 learning/cooperation studies and W5 storage, memory and recovery benchmarks | Reproducible evidence before expanding scope |
 
-## P6 research — bounded exposure and missing feedback
+**SuperKernel** is the overarching architecture for lifecycle, policy, tools, budgets and scheduling. A complete production kernel, shared-model serving system, autonomous society and federated world network are still future work. See the [architecture](docs/ARCHITECTURE.md) and [roadmap](docs/ROADMAP.md).
 
-The [P6 exposure-cap experiment](docs/evaluation/P6-EXPOSURE-CAP-AND-CENSORED-FEEDBACK.md) tests a four-unit **per-donor** hard risk bound, seeded and fixed probing, simple change detection, a public-schedule-aware scripted partner, and delayed/censored policy notifications. The [complete 840-case measured results](docs/evaluation/P6-TEN-SEED-RESULTS-REPORT.md) include **negative** outcomes: probing costs money-like toy resources under hostile partners, and seeded probes are not universally better than fixed probes. W3 actions are SIMULATED, single-owner and authorized through the existing guarded router. **No production safety or trust claim.**
+## Latest study: recover evidence before spending more risk
+
+An agent sends a resource to a partner. The partner returns it, but the notification is lost. The agent may keep that transfer reserved against its risk limit and eventually stop interacting despite successful returns.
+
+**P7 tests whether the agent can recover from this situation by checking exact, already committed return receipts.** It compares notification-only feedback, periodic receipt reconciliation and an intentionally unsafe timeout-release control. A timeout alone provides no evidence that a resource was returned.
+
+The [2026-11-04 measured report](docs/evaluation/P7-HOLDOUT-RESULTS-20261104.md) records **960 cases on 10 fresh world seeds**, with four policies, four partner regimes, two feedback channels and three reconciliation modes.
+
+| Finding | Measured result |
+|---|---|
+| Cooperative partners with delayed/lost notifications | Mean reward per donor decision increased from **0.5421 to 0.6000** with exact receipts |
+| Notification-only and exact-receipt modes | **640/640 cases** respected the four-unit per-donor exposure bound |
+| Unsafe timeout-release control | **90/320 cases** exceeded the actual bound, reaching eight units |
+| Budget already consumed by confirmed losses | Reconciliation could not restore that budget |
+| Mixed partner behavior | Reconciliation improved mean reward but lost reward on **3/10 seeds** for each transferring policy |
+
+These are artificial rewards in a single-owner simulation. W3 transfers settle immediately; only notifications are delayed or lost. The result supports evidence-backed reconciliation within this fixture, not a universal cooperation policy or production safety guarantee.
+
+Reproduce the study:
 
 ```bash
-python -m unittest discover -s tests -p 'test_p6_risk_budget.py' -v
-python benchmarks/p6_risk_budget.py --seeds 10 --seed-start 10101 --out p6-cases.json
-```
-
-## P7 research — exact receipt reconciliation
-
-The [2026-11-04 research snapshot](docs/project/RESEARCH-SNAPSHOT-20261104.md)
-reconciles this fork with its historical upstream context. The
-[P7 measured report](docs/evaluation/P7-HOLDOUT-RESULTS-20261104.md) evaluates
-**960 fresh-seed cases** separating missing policy notifications from permanent
-budget exhaustion. Exact positive receipt recovery restores cooperative reward
-in the tested fixture, while an unsafe timeout control breaches actual exposure
-in 90/320 cases. Reconciliation does not undo confirmed losses or guarantee
-improved reward for every partner/seed. All settlement remains immediate,
-single-owner and SIMULATED.
-
-```bash
-python -m unittest discover -s tests -p 'test_p7_receipt_reconciliation.py' -v
+python -m unittest discover -s tests -p test_p7_receipt_reconciliation.py -v
+python benchmarks/p7_receipt_reconciliation.py --split development --out p7-development.json
 python benchmarks/p7_receipt_reconciliation.py --split holdout --out p7-holdout.json
 ```
 
-## Experimental compositional world research
+See the [frozen protocol](docs/evaluation/P7-RECEIPT-RECONCILIATION-PROTOCOL.md), [complete raw holdout](research/runs/2026-11-04/p7-holdout.json) and [validation record](research/runs/2026-11-04/validation.json). The report identifies the exact measured source commit; later documentation commits are separate.
 
-[RFC-007: Mathematical Foundations](docs/math/RFC-007-OPENWORLD-MATHEMATICAL-FOUNDATIONS.md) is the existing proposed W2 research architecture. The independent [EXPR-001 fixture](docs/experiments/COMPOSABLE-WORLD-FIXTURE.md), [mathematical notes](docs/math/COMPOSITIONAL-WORLD-NOTES.md), and [dependency-free example](examples/composable_world.py) explore only pure typed composition, agent blueprints and resource transfer/replay. They do **not** constitute approved OWP/OCP standards or production SuperKernel code.
+## Research progression
 
-```bash
-python -m unittest discover -s tests -p 'test_composable_world_experiment.py' -v
-```
+Each study answers a bounded question. Synthetic results do not establish real-world intelligence, societal emergence or large-scale deployment capacity.
 
-## Scientific and safety boundaries
+| Study | Question and evidence |
+|---|---|
+| W5 population representations | Do means, histograms or distribution sketches preserve useful information? [Baseline study](docs/evaluation/W5-POPULATION-REPRESENTATION-BASELINES.md) |
+| P1 | Can a synthetic 30-agent contextual bandit learn from chosen-action rewards? [Study](docs/evaluation/P1-THIRTY-AGENT-ONLINE-LEARNING.md) |
+| P2 | How does stateful cooperation change learning inside a replayable world? [Study](docs/evaluation/P2-STATEFUL-COOPERATION-EXPERIMENT.md) |
+| P3 | What happens when donor and recipient policies learn separately? [Study](docs/evaluation/P3-MUTUAL-LEARNING-W3.md) |
+| P4 | Which representations help sample efficiency under partner shifts? [Results](docs/evaluation/P4-FIVE-SEED-RESULTS-REPORT.md) |
+| P5 | What is the reward/loss trade-off of abstention and probing? [Results](docs/evaluation/P5-FIVE-SEED-RESULTS-REPORT.md) |
+| P6 | Can a hard exposure cap coexist with missing feedback? [840-case results](docs/evaluation/P6-TEN-SEED-RESULTS-REPORT.md) |
+| P7 | Can exact receipts reduce notification-induced lockup? [960-case results](docs/evaluation/P7-HOLDOUT-RESULTS-20261104.md) |
 
-- No claim of billion-agent scalability, universal compression, or human-level intelligence.
-- A simulated or inferred memory is never evidence of an observed real-world event.
-- External actions and memory sharing require explicit authorization.
-- Benchmarks must include actual on-disk cost (including WAL), CPU, accuracy, uncertainty and baselines.
-- Historical prototype ZIP files are **not public** pending independent license, secret, security and reproducibility review.
+The [primary literature map](docs/research/RELATED-RESEARCH-AND-PROJECTS.md) connects earlier research to testable OpenWorld questions. Further proposals cover [population representations and agent genomes](docs/research/POPULATION-REPRESENTATION-AND-AGENT-DNA.md), [compositional worlds](docs/experiments/COMPOSABLE-WORLD-FIXTURE.md) and [mathematical foundations](docs/math/RFC-007-OPENWORLD-MATHEMATICAL-FOUNDATIONS.md). Their proposed scope is distinct from the implemented experiments.
 
-## Language and license
+## Validation and known limits
 
-English is the canonical language for code, comments, issues, RFCs and pull requests. New source and documentation are available under [Apache-2.0](LICENSE).
+The **2026-11-04 Windows checkpoint** ran **462 tests with zero unexpected failures**, six skips and two expected security failures. Its environment was Python 3.14.7 and SQLite 3.53.4. The [full log](research/runs/2026-11-04/final-tests.log) and [measured report](docs/evaluation/P7-HOLDOUT-RESULTS-20261104.md) preserve the details.
 
-## Project continuity and previous sessions
+- The two expected failures document unresolved authority rollback and atomicity gaps: restoring an old grant backup can revive authority, and authorization consumption plus its downstream world effect lacks one atomic boundary.
+- One live PostgreSQL test and five Bash runner checks were skipped. That checkpoint does not establish live PostgreSQL parity.
+- Exact historical evidence stays separate from predictions and simulated replay. Generated content cannot establish that an outside-world event happened.
+- Cross-owner access and consequential external actions require explicit authorization. The included same-owner fixtures do not establish independent bilateral consent.
+- Population counts do not measure concurrent model inference. Billion-agent capacity, universal memory compression and general intelligence are not demonstrated.
+- Historical prototype archives remain excluded pending rights, secrets, security and reproducibility review.
 
-Start new work sessions with the [canonical project continuity](docs/project/PROJECT-CONTINUITY.md), [decision ledger](docs/project/DECISION-LEDGER.md), [source register](docs/project/SESSION-SOURCE-REGISTER.md), and [execution handoff](docs/project/EXECUTION-HANDOFF.md). Refer to the source register for evidence provenance and verification status.
+## Next research steps
+
+1. Persist budgets and receipts, then test restart, duplicate delivery and failure between accepting a transfer and recording its reservation.
+2. Compare ways to preserve a late probing allowance under the same total cap and unknown partner recovery times.
+3. Measure memory's decision benefit alongside exact-history availability, CPU, disk and SQLite WAL costs.
+4. Evaluate unfamiliar adaptive partners before expanding toward distributed or federated worlds.
+
+These are proposed studies. Shared runtime changes require architecture and compatibility review. See the [current research snapshot](docs/project/RESEARCH-SNAPSHOT-20261104.md) and [research status](research/RESEARCH-STATUS.md).
+
+## Repository guide
+
+- [`src/openworld_superkernel/`](src/openworld_superkernel/): reference implementations.
+- [`benchmarks/`](benchmarks/): repeatable synthetic experiments.
+- [`tests/`](tests/): invariant, failure and integration checks.
+- [`examples/`](examples/): runnable local demonstrations.
+- [`docs/`](docs/): architecture, protocols, decisions and experiment reports.
+- [`research/`](research/): research status and recorded execution evidence.
+
+This repository is [iamphan04/OpenWorld](https://github.com/iamphan04/OpenWorld), a fork of [CocAgent/OpenWorld](https://github.com/CocAgent/OpenWorld). Older issue and PR links refer to that upstream history. Start future sessions with the [current snapshot](docs/project/RESEARCH-SNAPSHOT-20261104.md), [continuity](docs/project/PROJECT-CONTINUITY.md), [decision ledger](docs/project/DECISION-LEDGER.md), [source register](docs/project/SESSION-SOURCE-REGISTER.md) and [handoff](docs/project/EXECUTION-HANDOFF.md).
+
+## Contributing and license
+
+Public documentation, code comments, issues and pull requests use **English**. Contributions should include assumptions, baselines, seeds, negative findings, reproducible local checks and rollback instructions. See [Contributing](CONTRIBUTING.md), [Workstreams](docs/WORKSTREAMS.md) and [Security](SECURITY.md).
+
+New OpenWorld-authored source and documentation are licensed under [Apache-2.0](LICENSE). Referenced third-party projects and historical materials retain their own rights and review requirements.
