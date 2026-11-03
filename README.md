@@ -32,6 +32,34 @@ python examples/populations/local_three_groups.py
 
 Chạy các lệnh từ thư mục gốc của dự án. Những ví dụ này dùng agent và sự kiện mô phỏng, không gọi mô hình ngôn ngữ và không kết nối với thế giới của chủ sở hữu khác.
 
+## Chạy mô phỏng đúng hai agent bằng Python
+
+[Chương trình hai agent](examples/two_agents.py) tạo A và B, chạy từng lượt và in diễn biến trực tiếp trong terminal:
+
+- **A** quyết định có gửi một đơn vị tài nguyên hay không, theo dõi hạn mức và xử lý phản hồi.
+- **B** nhận tài nguyên rồi quyết định trả lại hoặc giữ, tùy kịch bản.
+- Thế giới W3 ghi lại các lần chuyển. Thông báo cho A có thể bị chậm hoặc mất; biên nhận chính xác vẫn nằm trong sổ sự kiện.
+
+```bash
+git switch research/p7-budget-feedback-20261104
+
+# B luôn trả lại; so sánh cả ba cách xử lý mất thông báo.
+python examples/two_agents.py
+
+# B giữ tài nguyên; chỉ in kết quả tổng hợp.
+python examples/two_agents.py --scenario hostile --summary-only
+
+# B giữ tài nguyên 10 lượt đầu rồi bắt đầu hợp tác.
+python examples/two_agents.py --scenario recovery --summary-only
+
+# Chỉ chạy A có đối chiếu biên nhận, đồng thời lưu sổ sự kiện và diễn biến.
+python examples/two_agents.py --mode reconcile --out two-agents.json
+```
+
+Với cấu hình mặc định, A chỉ chờ thông báo gửi được **8 lần**, còn A đối chiếu biên nhận gửi đủ **20 lần**, khi B luôn trả tài nguyên. Khi B luôn giữ tài nguyên, hai cách an toàn dừng ở mức mất **4 đơn vị**; cách tự mở khóa theo thời gian mất **6 đơn vị**.
+
+Đây là hai agent có chính sách viết bằng mã, chạy trên CPU và không gọi mô hình ngôn ngữ. Xem [thiết kế và cách chạy](docs/experiments/TWO-AGENT-RECEIPT-SIMULATION.md) hoặc chạy `python examples/two_agents.py --help` để xem tham số.
+
 ## Dự án đã có những gì?
 
 | Thành phần | Phần đã triển khai để nghiên cứu | Mục tiêu dài hạn |
