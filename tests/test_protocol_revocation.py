@@ -1,6 +1,8 @@
 """W4 revocation reference tests: synthetic keys and no public identities."""
 from __future__ import annotations
 
+from contextlib import closing
+
 import json
 import os
 from pathlib import Path
@@ -104,7 +106,7 @@ sys.exit(99)
             self.check()
 
     def test_missing_table_fails_closed(self):
-        with sqlite3.connect(self.path) as db:
+        with closing(sqlite3.connect(self.path)) as db, db:
             db.execute("DROP TABLE capability_revocations")
         with self.assertRaises(TrustBoundaryError):
             self.check()
@@ -112,7 +114,7 @@ sys.exit(99)
     def test_revocation_idempotent_and_namespace_bound(self):
         self.authority.revoke("nonce-a")
         self.authority.revoke("nonce-a")
-        with sqlite3.connect(self.path) as db:
+        with closing(sqlite3.connect(self.path)) as db, db:
             count = db.execute(
                 "SELECT count(*) FROM capability_revocations "
                 "WHERE issuer='local-issuer' AND audience='local-world' "

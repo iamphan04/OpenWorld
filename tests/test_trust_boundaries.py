@@ -1,6 +1,8 @@
 """Research-only trust boundary regression tests; no real identities or data."""
 from __future__ import annotations
 
+from contextlib import closing
+
 import hashlib
 import json
 import sqlite3
@@ -216,7 +218,7 @@ class TestAnchoredExactLedger(unittest.TestCase):
         signed = self._anchor()
         backup_file = Path(self.folder.name) / 'backup.db'
         online_backup(self.db, backup_file)
-        with sqlite3.connect(backup_file) as restored:
+        with closing(sqlite3.connect(backup_file)) as restored, restored:
             self.assertTrue(verify_anchor(restored, signed_anchor=signed,
                                           external_verification_key=KEY,
                                           owner='owner-one', agent='agent-one'))
@@ -229,7 +231,7 @@ class TestAnchoredExactLedger(unittest.TestCase):
         signed = self._anchor()
         backup_file = Path(self.folder.name) / 'wal-copy.db'
         online_backup(self.db, backup_file)
-        with sqlite3.connect(backup_file) as restored:
+        with closing(sqlite3.connect(backup_file)) as restored, restored:
             self.assertTrue(verify_anchor(restored, signed_anchor=signed,
                                           external_verification_key=KEY,
                                           owner='owner-one', agent='agent-one'))

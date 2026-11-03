@@ -14,7 +14,6 @@ import os
 from pathlib import Path
 import platform
 import random
-import resource
 import statistics
 import sys
 import time
@@ -23,6 +22,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from p2_stateful_cooperation import OPPORTUNITIES, build_world, deterministic_seed
 from p3_mutual_learning_w3 import AgentBandit, make_router, run_episode
+from benchmark_metrics import peak_rss
 from openworld_superkernel.world_fixture import Agent, create_world
 
 MODELS = ("fixed_hold", "fixed_cooperate", "independent_full",
@@ -254,7 +254,7 @@ def main() -> None:
         partners=tuple(args.partners), regimes=tuple(args.regimes),
     ) for offset in range(args.seeds)
         for budget in args.budgets for model in args.models]
-    rss_max = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+    rss_max, rss_units = peak_rss()
     report = {
         "schema": SCHEMA,
         "scope": "offline same-owner W3, twenty policy decisions, no general MARL claim",
@@ -263,7 +263,7 @@ def main() -> None:
             "platform": platform.platform(),
             "cpu_count": os.cpu_count(),
             "ru_maxrss_platform_units": rss_max,
-            "ru_maxrss_units": "KiB on Linux; bytes on macOS",
+            "ru_maxrss_units": rss_units,
         },
         "wall_seconds": time.perf_counter() - started,
         "cases": cases,

@@ -12,7 +12,6 @@ import math
 import os
 from pathlib import Path
 import platform
-import resource
 import statistics
 import sys
 import time
@@ -22,6 +21,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from p2_stateful_cooperation import OPPORTUNITIES
 from p3_mutual_learning_w3 import _exchange, make_router
 from p5_risk_aware import genesis_world, partner_returns
+from benchmark_metrics import peak_rss
 from openworld_superkernel.risk_budget import CAP, POLICIES, DonorBudget, draw
 from openworld_superkernel.world_fixture import verify_replay
 
@@ -176,11 +176,12 @@ def evaluate(*, start_seed: int = 10101, seeds: int = 10,
     cases=[run_case(p,r,f,seed=start_seed+i)
            for i in range(seeds) for r in regimes for f in feedbacks
            for p in policies]
+    rss_max, rss_units = peak_rss()
     return {"schema":SCHEMA,"cases":cases,
             "environment":{"python":sys.version.split()[0],
                            "platform":platform.platform(),"cpu_count":os.cpu_count(),
-                           "peak_rss_os_units":resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
-                           "rss_units":"KiB on Linux; bytes on macOS"},
+                           "peak_rss_os_units":rss_max,
+                           "rss_units":rss_units},
             "wall_seconds":time.perf_counter()-t0,
             "process_cpu_seconds":time.process_time()-c0}
 

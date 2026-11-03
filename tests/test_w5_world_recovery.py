@@ -6,6 +6,8 @@ authenticated proof of history.
 """
 from __future__ import annotations
 
+from contextlib import closing
+
 import json
 import os
 from pathlib import Path
@@ -142,8 +144,8 @@ except ValueError as ex:
 
     def test_sqlite_backup_restore_is_state_equivalent(self):
         backup = Path(self.tmp.name) / "copy.sqlite"
-        with sqlite3.connect(self.path) as source:
-            with sqlite3.connect(backup) as destination:
+        with closing(sqlite3.connect(self.path)) as source, source:
+            with closing(sqlite3.connect(backup)) as destination, destination:
                 source.backup(destination)
         genesis, restored = load_checkpoint(backup)
         self.assertEqual(genesis.fingerprint(), self.genesis.fingerprint())

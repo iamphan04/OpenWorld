@@ -3,6 +3,7 @@
 An in-memory witness models independent custody *only for this fixture*.
 It is not an external secure monotonic service.
 """
+from contextlib import closing
 import shutil
 import sqlite3
 import sys
@@ -84,7 +85,7 @@ class AntiRollbackTests(unittest.TestCase):
         self.safe = WitnessedAuthority(self.raw, self.witness)
 
     def make_backup(self):
-        with sqlite3.connect(str(self.backup)) as output:
+        with closing(sqlite3.connect(str(self.backup))) as output, output:
             self.raw.db.backup(output)
 
     def restore(self):

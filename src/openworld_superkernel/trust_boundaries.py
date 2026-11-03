@@ -6,6 +6,8 @@ Authenticating a capability does not authenticate an observed event's source.
 """
 from __future__ import annotations
 
+from contextlib import closing
+
 import hashlib
 import hmac
 import json
@@ -250,7 +252,7 @@ def online_backup(source: sqlite3.Connection, target: str | Path) -> None:
         raise FileExistsError('refuse overwrite of backup')
     destination.parent.mkdir(parents=True, exist_ok=True)
     try:
-        with sqlite3.connect(str(destination)) as backup:
+        with closing(sqlite3.connect(str(destination))) as backup, backup:
             source.backup(backup)
             result = backup.execute('PRAGMA integrity_check').fetchone()
             if result != ('ok',):

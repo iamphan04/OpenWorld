@@ -5,6 +5,8 @@ Do not remove until independently witnessed rollback prevention is implemented.
 """
 from __future__ import annotations
 
+from contextlib import closing
+
 import shutil
 import sqlite3
 import sys
@@ -83,7 +85,7 @@ class Sec002StorageRollbackTests(unittest.TestCase):
     def test_known_negative_restore_before_revocation_must_still_deny(self) -> None:
         """Known gap: an earlier database snapshot resurrects a valid capability."""
         token = self.issue()
-        with sqlite3.connect(str(self.backup_path)) as backup:
+        with closing(sqlite3.connect(str(self.backup_path))) as backup, backup:
             self.authority.db.backup(backup)
         self.authority.revoke(self.owner_session, grant_token=token)
         with self.assertRaises(AuthorizationError):

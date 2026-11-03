@@ -7,7 +7,6 @@ import math
 import os
 from pathlib import Path
 import platform
-import resource
 import sqlite3
 import sys
 import tempfile
@@ -15,6 +14,7 @@ import time
 import tracemalloc
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+from benchmark_metrics import peak_rss
 from openworld_superkernel.world_fixture import (
     Agent, TickInput, Weather, advance, candidate_contacts, create_world,
     seeded_signals, verify_replay,
@@ -107,6 +107,7 @@ def main() -> None:
     rows = [measure(args.agents, args.ticks, args.seed_start + index, shape)
             for shape in ("chain", "hub", "disconnected")
             for index in range(args.seeds)]
+    rss_max, rss_units = peak_rss()
     report = {
         "schema": "openworld.w5.world-recovery-eval.v0",
         "limits": "SIMULATED, local CPU only, no independent security/capacity proof",
@@ -116,8 +117,7 @@ def main() -> None:
             "platform": platform.platform(),
             "pid": os.getpid(),
             "rss_peak_kib_linux": (
-                resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
-                if sys.platform == "linux" else None
+                rss_max if rss_units == "KiB" else None
             ),
         },
         "arguments": {

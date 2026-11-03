@@ -5,6 +5,8 @@ principal identities and prevent bypass access to the raw store.
 """
 from __future__ import annotations
 
+from contextlib import closing
+
 import hashlib
 import sqlite3
 import sys
@@ -98,7 +100,7 @@ class TestRealMemoryTrustBoundaries(unittest.TestCase):
             )
         backup = self.root / "online-backup.db"
         online_backup(self.memory.db, backup)
-        with sqlite3.connect(backup) as restored:
+        with closing(sqlite3.connect(backup)) as restored, restored:
             for agent in agents:
                 self.assertTrue(verify_anchor(
                     restored, signed_anchor=anchors[agent],

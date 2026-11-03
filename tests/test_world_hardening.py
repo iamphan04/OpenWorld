@@ -1,4 +1,5 @@
 """W5 adversarial cases for W3 replay, conflicting IDs and local checkpointing."""
+from contextlib import closing
 import hashlib
 import json
 from pathlib import Path
@@ -92,7 +93,7 @@ class W3HardeningTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp:
             path = Path(temp) / "w.sqlite3"
             save_checkpoint(path, self.genesis, state)
-            with sqlite3.connect(path) as db:
+            with closing(sqlite3.connect(path)) as db, db:
                 db.execute("UPDATE w3_checkpoint SET payload='{}'")
             with self.assertRaisesRegex(ValueError, "corrupt"):
                 load_checkpoint(path)
@@ -102,7 +103,7 @@ class W3HardeningTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp:
             path = Path(temp) / "w.sqlite3"
             save_checkpoint(path, self.genesis, state)
-            with sqlite3.connect(path) as db:
+            with closing(sqlite3.connect(path)) as db, db:
                 payload = json.loads(db.execute(
                     "SELECT payload FROM w3_checkpoint"
                 ).fetchone()[0])

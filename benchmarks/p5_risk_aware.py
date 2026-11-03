@@ -15,7 +15,6 @@ import math
 import os
 from pathlib import Path
 import platform
-import resource
 import statistics
 import sys
 import time
@@ -24,6 +23,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from p2_stateful_cooperation import OPPORTUNITIES, OWNER, deterministic_seed
 from p3_mutual_learning_w3 import make_router, _exchange
+from benchmark_metrics import peak_rss
 from openworld_superkernel.world_fixture import Agent, World, create_world, verify_replay
 
 POLICIES = ("hold", "always_offer", "all_history", "risk_window")
@@ -241,13 +241,14 @@ def evaluate(*, seeds: int = 5, start: int = 9101,
     t0, cpu0 = time.perf_counter(), time.process_time()
     records = [run_case(p, r, seed=start+i) for i in range(seeds)
                for r in regimes for p in policies]
+    rss_max, rss_units = peak_rss()
     return {
         "schema": SCHEMA,
         "environment": {
             "python": sys.version.split()[0], "platform": platform.platform(),
             "cpu_count": os.cpu_count(),
-            "ru_maxrss": resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
-            "ru_maxrss_units": "KiB on Linux; bytes on macOS",
+            "ru_maxrss": rss_max,
+            "ru_maxrss_units": rss_units,
         },
         "registered_agents": 30, "acting_donors": 10,
         "rounds": ROUND_COUNT, "ticks_per_case": ROUND_COUNT*2,
