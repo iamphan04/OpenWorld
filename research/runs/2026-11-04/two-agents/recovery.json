@@ -1,0 +1,2303 @@
+[
+  {
+    "actual_loss": 4,
+    "agents": [
+      "A",
+      "B"
+    ],
+    "balances": {
+      "A": 4,
+      "B": 4
+    },
+    "delay": 1,
+    "delivered_observations": 2,
+    "drop_every": 2,
+    "dropped_notifications": 2,
+    "duplicates_ignored": 0,
+    "events": [
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "6fbfc92e29df709719a54a69a49ce3afe4bb41c830ff053291397393785d0ed3",
+        "kind": "transfer",
+        "prev_hash": "GENESIS",
+        "provenance": "SIMULATED",
+        "sequence": 1,
+        "target": "B",
+        "tick": 0
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "f48a3248ce997a406394fb45f92f539f2048e521b1e0c2cd579ce19b6df15f57",
+        "kind": "transfer",
+        "prev_hash": "6fbfc92e29df709719a54a69a49ce3afe4bb41c830ff053291397393785d0ed3",
+        "provenance": "SIMULATED",
+        "sequence": 2,
+        "target": "B",
+        "tick": 2
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "b16392a7bf50915cf98b7c2befc1b1bde25b3fa07ca0832bf80922fbf4e64a8e",
+        "kind": "transfer",
+        "prev_hash": "f48a3248ce997a406394fb45f92f539f2048e521b1e0c2cd579ce19b6df15f57",
+        "provenance": "SIMULATED",
+        "sequence": 3,
+        "target": "B",
+        "tick": 4
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "1b36bd0f8af97eb28c32a91b9434338556e308d7a5f30a2fbf05f2cba06a6b63",
+        "kind": "transfer",
+        "prev_hash": "b16392a7bf50915cf98b7c2befc1b1bde25b3fa07ca0832bf80922fbf4e64a8e",
+        "provenance": "SIMULATED",
+        "sequence": 4,
+        "target": "B",
+        "tick": 6
+      }
+    ],
+    "final_fingerprint": "d5c276bd2cd30bccaa6e27898a09afa66e082d7f4c900b7f17de1ed9ca71ee8e",
+    "genesis": {
+      "agents": [
+        {
+          "agent_id": "A",
+          "owner_id": "two-agent-owner",
+          "region": "local",
+          "resources": 8
+        },
+        {
+          "agent_id": "B",
+          "owner_id": "two-agent-owner",
+          "region": "local",
+          "resources": 0
+        }
+      ],
+      "balances": [
+        [
+          "A",
+          8
+        ],
+        [
+          "B",
+          0
+        ]
+      ],
+      "events": [],
+      "graph": [
+        [
+          "A",
+          [
+            "B"
+          ]
+        ],
+        [
+          "B",
+          [
+            "A"
+          ]
+        ]
+      ],
+      "journal": [],
+      "processed_ids": [],
+      "seed": 2026,
+      "tick": 0,
+      "weather": [
+        [
+          "local",
+          "clear"
+        ]
+      ]
+    },
+    "journal": [
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-0",
+            "target": "B",
+            "tick": 0
+          }
+        ],
+        "external": [],
+        "tick": 0
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 1
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-1",
+            "target": "B",
+            "tick": 2
+          }
+        ],
+        "external": [],
+        "tick": 2
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 3
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-2",
+            "target": "B",
+            "tick": 4
+          }
+        ],
+        "external": [],
+        "tick": 4
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 5
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-3",
+            "target": "B",
+            "tick": 6
+          }
+        ],
+        "external": [],
+        "tick": 6
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 7
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 8
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 9
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 10
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 11
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 12
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 13
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 14
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 15
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 16
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 17
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 18
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 19
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 20
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 21
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 22
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 23
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 24
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 25
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 26
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 27
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 28
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 29
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 30
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 31
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 32
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 33
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 34
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 35
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 36
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 37
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 38
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 39
+      }
+    ],
+    "known_loss": 2,
+    "mode": "notifications",
+    "peak_actual_loss_plus_inflight": 4,
+    "peak_booked_exposure": 4,
+    "pending": 2,
+    "policy_observations": 2,
+    "recover_at": 10,
+    "recovered_receipts": 0,
+    "replay_verified": true,
+    "returned": 0,
+    "rounds": 20,
+    "scenario": "recovery",
+    "schema": "openworld.two-agents.receipts.v0",
+    "sent": 4,
+    "trace": [
+      {
+        "actual_loss": 1,
+        "balances": {
+          "A": 7,
+          "B": 1
+        },
+        "booked_exposure": 1,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-2",
+        "pending": 1,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 1,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 2,
+        "balances": {
+          "A": 6,
+          "B": 2
+        },
+        "booked_exposure": 2,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 1,
+        "notification": "dropped",
+        "pending": 1,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 2,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 3,
+        "balances": {
+          "A": 5,
+          "B": 3
+        },
+        "booked_exposure": 3,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 1,
+        "notification": "due-round-4",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 3,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 2,
+        "notification": "dropped",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 4,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 5,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 6,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 7,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 8,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 9,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 10,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 11,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 12,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 13,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 14,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 15,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 16,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 17,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 18,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 19,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 20,
+        "timeout_releases": 0
+      }
+    ],
+    "unsafe_releases": 0
+  },
+  {
+    "actual_loss": 4,
+    "agents": [
+      "A",
+      "B"
+    ],
+    "balances": {
+      "A": 4,
+      "B": 4
+    },
+    "delay": 1,
+    "delivered_observations": 2,
+    "drop_every": 2,
+    "dropped_notifications": 2,
+    "duplicates_ignored": 0,
+    "events": [
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "6fbfc92e29df709719a54a69a49ce3afe4bb41c830ff053291397393785d0ed3",
+        "kind": "transfer",
+        "prev_hash": "GENESIS",
+        "provenance": "SIMULATED",
+        "sequence": 1,
+        "target": "B",
+        "tick": 0
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "f48a3248ce997a406394fb45f92f539f2048e521b1e0c2cd579ce19b6df15f57",
+        "kind": "transfer",
+        "prev_hash": "6fbfc92e29df709719a54a69a49ce3afe4bb41c830ff053291397393785d0ed3",
+        "provenance": "SIMULATED",
+        "sequence": 2,
+        "target": "B",
+        "tick": 2
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "b16392a7bf50915cf98b7c2befc1b1bde25b3fa07ca0832bf80922fbf4e64a8e",
+        "kind": "transfer",
+        "prev_hash": "f48a3248ce997a406394fb45f92f539f2048e521b1e0c2cd579ce19b6df15f57",
+        "provenance": "SIMULATED",
+        "sequence": 3,
+        "target": "B",
+        "tick": 4
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "1b36bd0f8af97eb28c32a91b9434338556e308d7a5f30a2fbf05f2cba06a6b63",
+        "kind": "transfer",
+        "prev_hash": "b16392a7bf50915cf98b7c2befc1b1bde25b3fa07ca0832bf80922fbf4e64a8e",
+        "provenance": "SIMULATED",
+        "sequence": 4,
+        "target": "B",
+        "tick": 6
+      }
+    ],
+    "final_fingerprint": "d5c276bd2cd30bccaa6e27898a09afa66e082d7f4c900b7f17de1ed9ca71ee8e",
+    "genesis": {
+      "agents": [
+        {
+          "agent_id": "A",
+          "owner_id": "two-agent-owner",
+          "region": "local",
+          "resources": 8
+        },
+        {
+          "agent_id": "B",
+          "owner_id": "two-agent-owner",
+          "region": "local",
+          "resources": 0
+        }
+      ],
+      "balances": [
+        [
+          "A",
+          8
+        ],
+        [
+          "B",
+          0
+        ]
+      ],
+      "events": [],
+      "graph": [
+        [
+          "A",
+          [
+            "B"
+          ]
+        ],
+        [
+          "B",
+          [
+            "A"
+          ]
+        ]
+      ],
+      "journal": [],
+      "processed_ids": [],
+      "seed": 2026,
+      "tick": 0,
+      "weather": [
+        [
+          "local",
+          "clear"
+        ]
+      ]
+    },
+    "journal": [
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-0",
+            "target": "B",
+            "tick": 0
+          }
+        ],
+        "external": [],
+        "tick": 0
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 1
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-1",
+            "target": "B",
+            "tick": 2
+          }
+        ],
+        "external": [],
+        "tick": 2
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 3
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-2",
+            "target": "B",
+            "tick": 4
+          }
+        ],
+        "external": [],
+        "tick": 4
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 5
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-3",
+            "target": "B",
+            "tick": 6
+          }
+        ],
+        "external": [],
+        "tick": 6
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 7
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 8
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 9
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 10
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 11
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 12
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 13
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 14
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 15
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 16
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 17
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 18
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 19
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 20
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 21
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 22
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 23
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 24
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 25
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 26
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 27
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 28
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 29
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 30
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 31
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 32
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 33
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 34
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 35
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 36
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 37
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 38
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 39
+      }
+    ],
+    "known_loss": 2,
+    "mode": "reconcile",
+    "peak_actual_loss_plus_inflight": 4,
+    "peak_booked_exposure": 4,
+    "pending": 2,
+    "policy_observations": 2,
+    "recover_at": 10,
+    "recovered_receipts": 0,
+    "replay_verified": true,
+    "returned": 0,
+    "rounds": 20,
+    "scenario": "recovery",
+    "schema": "openworld.two-agents.receipts.v0",
+    "sent": 4,
+    "trace": [
+      {
+        "actual_loss": 1,
+        "balances": {
+          "A": 7,
+          "B": 1
+        },
+        "booked_exposure": 1,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-2",
+        "pending": 1,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 1,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 2,
+        "balances": {
+          "A": 6,
+          "B": 2
+        },
+        "booked_exposure": 2,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 1,
+        "notification": "dropped",
+        "pending": 1,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 2,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 3,
+        "balances": {
+          "A": 5,
+          "B": 3
+        },
+        "booked_exposure": 3,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 1,
+        "notification": "due-round-4",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 3,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 2,
+        "notification": "dropped",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 4,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 5,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 6,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 7,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 8,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 9,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 10,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 11,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 12,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 13,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 14,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 15,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 16,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 17,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 18,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 19,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 2,
+        "notification": "none",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 20,
+        "timeout_releases": 0
+      }
+    ],
+    "unsafe_releases": 0
+  },
+  {
+    "actual_loss": 6,
+    "agents": [
+      "A",
+      "B"
+    ],
+    "balances": {
+      "A": 2,
+      "B": 6
+    },
+    "delay": 1,
+    "delivered_observations": 4,
+    "drop_every": 2,
+    "dropped_notifications": 2,
+    "duplicates_ignored": 0,
+    "events": [
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "6fbfc92e29df709719a54a69a49ce3afe4bb41c830ff053291397393785d0ed3",
+        "kind": "transfer",
+        "prev_hash": "GENESIS",
+        "provenance": "SIMULATED",
+        "sequence": 1,
+        "target": "B",
+        "tick": 0
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "f48a3248ce997a406394fb45f92f539f2048e521b1e0c2cd579ce19b6df15f57",
+        "kind": "transfer",
+        "prev_hash": "6fbfc92e29df709719a54a69a49ce3afe4bb41c830ff053291397393785d0ed3",
+        "provenance": "SIMULATED",
+        "sequence": 2,
+        "target": "B",
+        "tick": 2
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "b16392a7bf50915cf98b7c2befc1b1bde25b3fa07ca0832bf80922fbf4e64a8e",
+        "kind": "transfer",
+        "prev_hash": "f48a3248ce997a406394fb45f92f539f2048e521b1e0c2cd579ce19b6df15f57",
+        "provenance": "SIMULATED",
+        "sequence": 3,
+        "target": "B",
+        "tick": 4
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "1b36bd0f8af97eb28c32a91b9434338556e308d7a5f30a2fbf05f2cba06a6b63",
+        "kind": "transfer",
+        "prev_hash": "b16392a7bf50915cf98b7c2befc1b1bde25b3fa07ca0832bf80922fbf4e64a8e",
+        "provenance": "SIMULATED",
+        "sequence": 4,
+        "target": "B",
+        "tick": 6
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "f3ca7c536473db74a5b38e323c316cfadfeac30c465fe5b6ba51a5cd78979f7d",
+        "kind": "transfer",
+        "prev_hash": "1b36bd0f8af97eb28c32a91b9434338556e308d7a5f30a2fbf05f2cba06a6b63",
+        "provenance": "SIMULATED",
+        "sequence": 5,
+        "target": "B",
+        "tick": 8
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "e087e805f2a27e6b3047c4aed3b607c1a2a2ab638c6940af18bbdb061835a480",
+        "kind": "transfer",
+        "prev_hash": "f3ca7c536473db74a5b38e323c316cfadfeac30c465fe5b6ba51a5cd78979f7d",
+        "provenance": "SIMULATED",
+        "sequence": 6,
+        "target": "B",
+        "tick": 12
+      }
+    ],
+    "final_fingerprint": "e0e0c325aa8f4ad22af5488eb69a56593750c4b0c24778670514813008ebb341",
+    "genesis": {
+      "agents": [
+        {
+          "agent_id": "A",
+          "owner_id": "two-agent-owner",
+          "region": "local",
+          "resources": 8
+        },
+        {
+          "agent_id": "B",
+          "owner_id": "two-agent-owner",
+          "region": "local",
+          "resources": 0
+        }
+      ],
+      "balances": [
+        [
+          "A",
+          8
+        ],
+        [
+          "B",
+          0
+        ]
+      ],
+      "events": [],
+      "graph": [
+        [
+          "A",
+          [
+            "B"
+          ]
+        ],
+        [
+          "B",
+          [
+            "A"
+          ]
+        ]
+      ],
+      "journal": [],
+      "processed_ids": [],
+      "seed": 2026,
+      "tick": 0,
+      "weather": [
+        [
+          "local",
+          "clear"
+        ]
+      ]
+    },
+    "journal": [
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-0",
+            "target": "B",
+            "tick": 0
+          }
+        ],
+        "external": [],
+        "tick": 0
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 1
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-1",
+            "target": "B",
+            "tick": 2
+          }
+        ],
+        "external": [],
+        "tick": 2
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 3
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-2",
+            "target": "B",
+            "tick": 4
+          }
+        ],
+        "external": [],
+        "tick": 4
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 5
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-3",
+            "target": "B",
+            "tick": 6
+          }
+        ],
+        "external": [],
+        "tick": 6
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 7
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-4",
+            "target": "B",
+            "tick": 8
+          }
+        ],
+        "external": [],
+        "tick": 8
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 9
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 10
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 11
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-6",
+            "target": "B",
+            "tick": 12
+          }
+        ],
+        "external": [],
+        "tick": 12
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 13
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 14
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 15
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 16
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 17
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 18
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 19
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 20
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 21
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 22
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 23
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 24
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 25
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 26
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 27
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 28
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 29
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 30
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 31
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 32
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 33
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 34
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 35
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 36
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 37
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 38
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 39
+      }
+    ],
+    "known_loss": 4,
+    "mode": "unsafe_timeout",
+    "peak_actual_loss_plus_inflight": 6,
+    "peak_booked_exposure": 4,
+    "pending": 0,
+    "policy_observations": 4,
+    "recover_at": 10,
+    "recovered_receipts": 0,
+    "replay_verified": true,
+    "returned": 0,
+    "rounds": 20,
+    "scenario": "recovery",
+    "schema": "openworld.two-agents.receipts.v0",
+    "sent": 6,
+    "trace": [
+      {
+        "actual_loss": 1,
+        "balances": {
+          "A": 7,
+          "B": 1
+        },
+        "booked_exposure": 1,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-2",
+        "pending": 1,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 1,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 2,
+        "balances": {
+          "A": 6,
+          "B": 2
+        },
+        "booked_exposure": 2,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 1,
+        "notification": "dropped",
+        "pending": 1,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 2,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 3,
+        "balances": {
+          "A": 5,
+          "B": 3
+        },
+        "booked_exposure": 3,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 1,
+        "notification": "due-round-4",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 3,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 4,
+        "balances": {
+          "A": 4,
+          "B": 4
+        },
+        "booked_exposure": 4,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 2,
+        "notification": "dropped",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 4,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 5,
+        "balances": {
+          "A": 3,
+          "B": 5
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 2,
+        "notification": "due-round-6",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 5,
+        "timeout_releases": 1
+      },
+      {
+        "actual_loss": 5,
+        "balances": {
+          "A": 3,
+          "B": 5
+        },
+        "booked_exposure": 4,
+        "delivered": 1,
+        "gift": false,
+        "known_loss": 3,
+        "notification": "none",
+        "pending": 1,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 6,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 6,
+        "balances": {
+          "A": 2,
+          "B": 6
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 3,
+        "notification": "due-round-8",
+        "pending": 1,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 7,
+        "timeout_releases": 1
+      },
+      {
+        "actual_loss": 6,
+        "balances": {
+          "A": 2,
+          "B": 6
+        },
+        "booked_exposure": 4,
+        "delivered": 1,
+        "gift": false,
+        "known_loss": 4,
+        "notification": "none",
+        "pending": 0,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 8,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 6,
+        "balances": {
+          "A": 2,
+          "B": 6
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 4,
+        "notification": "none",
+        "pending": 0,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 9,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 6,
+        "balances": {
+          "A": 2,
+          "B": 6
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 4,
+        "notification": "none",
+        "pending": 0,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 10,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 6,
+        "balances": {
+          "A": 2,
+          "B": 6
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 4,
+        "notification": "none",
+        "pending": 0,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 11,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 6,
+        "balances": {
+          "A": 2,
+          "B": 6
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 4,
+        "notification": "none",
+        "pending": 0,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 12,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 6,
+        "balances": {
+          "A": 2,
+          "B": 6
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 4,
+        "notification": "none",
+        "pending": 0,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 13,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 6,
+        "balances": {
+          "A": 2,
+          "B": 6
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 4,
+        "notification": "none",
+        "pending": 0,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 14,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 6,
+        "balances": {
+          "A": 2,
+          "B": 6
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 4,
+        "notification": "none",
+        "pending": 0,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 15,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 6,
+        "balances": {
+          "A": 2,
+          "B": 6
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 4,
+        "notification": "none",
+        "pending": 0,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 16,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 6,
+        "balances": {
+          "A": 2,
+          "B": 6
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 4,
+        "notification": "none",
+        "pending": 0,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 17,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 6,
+        "balances": {
+          "A": 2,
+          "B": 6
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 4,
+        "notification": "none",
+        "pending": 0,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 18,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 6,
+        "balances": {
+          "A": 2,
+          "B": 6
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 4,
+        "notification": "none",
+        "pending": 0,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 19,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 6,
+        "balances": {
+          "A": 2,
+          "B": 6
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 4,
+        "notification": "none",
+        "pending": 0,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 20,
+        "timeout_releases": 0
+      }
+    ],
+    "unsafe_releases": 2
+  }
+]

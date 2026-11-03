@@ -1,0 +1,4025 @@
+[
+  {
+    "actual_loss": 0,
+    "agents": [
+      "A",
+      "B"
+    ],
+    "balances": {
+      "A": 8,
+      "B": 0
+    },
+    "delay": 1,
+    "delivered_observations": 4,
+    "drop_every": 2,
+    "dropped_notifications": 4,
+    "duplicates_ignored": 0,
+    "events": [
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "6fbfc92e29df709719a54a69a49ce3afe4bb41c830ff053291397393785d0ed3",
+        "kind": "transfer",
+        "prev_hash": "GENESIS",
+        "provenance": "SIMULATED",
+        "sequence": 1,
+        "target": "B",
+        "tick": 0
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "0d97ac647c8e33a9f041997b04a210a2fdbfbf4019c3616e6315bfb0d935e94a",
+        "kind": "transfer",
+        "prev_hash": "6fbfc92e29df709719a54a69a49ce3afe4bb41c830ff053291397393785d0ed3",
+        "provenance": "SIMULATED",
+        "sequence": 2,
+        "target": "A",
+        "tick": 1
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "02c57429d2b8afd3bf6f6e6df4a5681777f10aa4f7a8d71f7e1eefd807e41945",
+        "kind": "transfer",
+        "prev_hash": "0d97ac647c8e33a9f041997b04a210a2fdbfbf4019c3616e6315bfb0d935e94a",
+        "provenance": "SIMULATED",
+        "sequence": 3,
+        "target": "B",
+        "tick": 2
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "85db1f98aefe7b39c26c50972581fca6b82553223323a8cce117827c1297a209",
+        "kind": "transfer",
+        "prev_hash": "02c57429d2b8afd3bf6f6e6df4a5681777f10aa4f7a8d71f7e1eefd807e41945",
+        "provenance": "SIMULATED",
+        "sequence": 4,
+        "target": "A",
+        "tick": 3
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "394890940cbc2f6c66244c88ff11b1d0745ec0f25b529a0df49771444a77605c",
+        "kind": "transfer",
+        "prev_hash": "85db1f98aefe7b39c26c50972581fca6b82553223323a8cce117827c1297a209",
+        "provenance": "SIMULATED",
+        "sequence": 5,
+        "target": "B",
+        "tick": 4
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "0a4642117a8b1f7e5cc9355a3ab5374a1e25b55a1aaa85ae6322d89d99bacca7",
+        "kind": "transfer",
+        "prev_hash": "394890940cbc2f6c66244c88ff11b1d0745ec0f25b529a0df49771444a77605c",
+        "provenance": "SIMULATED",
+        "sequence": 6,
+        "target": "A",
+        "tick": 5
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "415ccd7b04a71087de7aa931a727c97573701a40ed815c415b32b021c6194161",
+        "kind": "transfer",
+        "prev_hash": "0a4642117a8b1f7e5cc9355a3ab5374a1e25b55a1aaa85ae6322d89d99bacca7",
+        "provenance": "SIMULATED",
+        "sequence": 7,
+        "target": "B",
+        "tick": 6
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "46ad0307b6a673784229070d24c558beacb9c9a95303067c6b96e65b7556b871",
+        "kind": "transfer",
+        "prev_hash": "415ccd7b04a71087de7aa931a727c97573701a40ed815c415b32b021c6194161",
+        "provenance": "SIMULATED",
+        "sequence": 8,
+        "target": "A",
+        "tick": 7
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "a924e9faf00aa0f590e0e73d8af89c627815e668fca56ad9ac6a3bf0743a8ae2",
+        "kind": "transfer",
+        "prev_hash": "46ad0307b6a673784229070d24c558beacb9c9a95303067c6b96e65b7556b871",
+        "provenance": "SIMULATED",
+        "sequence": 9,
+        "target": "B",
+        "tick": 8
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "d86c1ea6cf57d6f74da28d0b2ed7aa6ee960793e6bc17188f339758e2ae71944",
+        "kind": "transfer",
+        "prev_hash": "a924e9faf00aa0f590e0e73d8af89c627815e668fca56ad9ac6a3bf0743a8ae2",
+        "provenance": "SIMULATED",
+        "sequence": 10,
+        "target": "A",
+        "tick": 9
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "b872ddcfdccd1a1700b1c2d636bcc0fb89bc15e91b019fbf5fdb475999bbf8c2",
+        "kind": "transfer",
+        "prev_hash": "d86c1ea6cf57d6f74da28d0b2ed7aa6ee960793e6bc17188f339758e2ae71944",
+        "provenance": "SIMULATED",
+        "sequence": 11,
+        "target": "B",
+        "tick": 10
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "fa3c18829cd9634206ccd86a479a1a25921db387543e5db60a41e2cf98fd954e",
+        "kind": "transfer",
+        "prev_hash": "b872ddcfdccd1a1700b1c2d636bcc0fb89bc15e91b019fbf5fdb475999bbf8c2",
+        "provenance": "SIMULATED",
+        "sequence": 12,
+        "target": "A",
+        "tick": 11
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "574410231329543e6194c7d8a4414475e663d1e8b55257169a56db5b1bfacb77",
+        "kind": "transfer",
+        "prev_hash": "fa3c18829cd9634206ccd86a479a1a25921db387543e5db60a41e2cf98fd954e",
+        "provenance": "SIMULATED",
+        "sequence": 13,
+        "target": "B",
+        "tick": 12
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "39f20c2b2608c848a16a4e4d035606cd8eef6509c6f893d6f7b673dd2c1b6ab4",
+        "kind": "transfer",
+        "prev_hash": "574410231329543e6194c7d8a4414475e663d1e8b55257169a56db5b1bfacb77",
+        "provenance": "SIMULATED",
+        "sequence": 14,
+        "target": "A",
+        "tick": 13
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "acac2d816c1ef5c93b614e4fe5ff856226d2560c529b9305a25e0a025abfa988",
+        "kind": "transfer",
+        "prev_hash": "39f20c2b2608c848a16a4e4d035606cd8eef6509c6f893d6f7b673dd2c1b6ab4",
+        "provenance": "SIMULATED",
+        "sequence": 15,
+        "target": "B",
+        "tick": 14
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "40c1d080ed3188f9d737202e77295d8c1f7a58310e5e88f8426500ccac1fe9f2",
+        "kind": "transfer",
+        "prev_hash": "acac2d816c1ef5c93b614e4fe5ff856226d2560c529b9305a25e0a025abfa988",
+        "provenance": "SIMULATED",
+        "sequence": 16,
+        "target": "A",
+        "tick": 15
+      }
+    ],
+    "final_fingerprint": "8fbc1af0633526f8b93f2f6d335a0aacef44ca26d03357837908eb8cf6c9f5f3",
+    "genesis": {
+      "agents": [
+        {
+          "agent_id": "A",
+          "owner_id": "two-agent-owner",
+          "region": "local",
+          "resources": 8
+        },
+        {
+          "agent_id": "B",
+          "owner_id": "two-agent-owner",
+          "region": "local",
+          "resources": 0
+        }
+      ],
+      "balances": [
+        [
+          "A",
+          8
+        ],
+        [
+          "B",
+          0
+        ]
+      ],
+      "events": [],
+      "graph": [
+        [
+          "A",
+          [
+            "B"
+          ]
+        ],
+        [
+          "B",
+          [
+            "A"
+          ]
+        ]
+      ],
+      "journal": [],
+      "processed_ids": [],
+      "seed": 2026,
+      "tick": 0,
+      "weather": [
+        [
+          "local",
+          "clear"
+        ]
+      ]
+    },
+    "journal": [
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-0",
+            "target": "B",
+            "tick": 0
+          }
+        ],
+        "external": [],
+        "tick": 0
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-0",
+            "target": "A",
+            "tick": 1
+          }
+        ],
+        "external": [],
+        "tick": 1
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-1",
+            "target": "B",
+            "tick": 2
+          }
+        ],
+        "external": [],
+        "tick": 2
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-1",
+            "target": "A",
+            "tick": 3
+          }
+        ],
+        "external": [],
+        "tick": 3
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-2",
+            "target": "B",
+            "tick": 4
+          }
+        ],
+        "external": [],
+        "tick": 4
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-2",
+            "target": "A",
+            "tick": 5
+          }
+        ],
+        "external": [],
+        "tick": 5
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-3",
+            "target": "B",
+            "tick": 6
+          }
+        ],
+        "external": [],
+        "tick": 6
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-3",
+            "target": "A",
+            "tick": 7
+          }
+        ],
+        "external": [],
+        "tick": 7
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-4",
+            "target": "B",
+            "tick": 8
+          }
+        ],
+        "external": [],
+        "tick": 8
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-4",
+            "target": "A",
+            "tick": 9
+          }
+        ],
+        "external": [],
+        "tick": 9
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-5",
+            "target": "B",
+            "tick": 10
+          }
+        ],
+        "external": [],
+        "tick": 10
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-5",
+            "target": "A",
+            "tick": 11
+          }
+        ],
+        "external": [],
+        "tick": 11
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-6",
+            "target": "B",
+            "tick": 12
+          }
+        ],
+        "external": [],
+        "tick": 12
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-6",
+            "target": "A",
+            "tick": 13
+          }
+        ],
+        "external": [],
+        "tick": 13
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-7",
+            "target": "B",
+            "tick": 14
+          }
+        ],
+        "external": [],
+        "tick": 14
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-7",
+            "target": "A",
+            "tick": 15
+          }
+        ],
+        "external": [],
+        "tick": 15
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 16
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 17
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 18
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 19
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 20
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 21
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 22
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 23
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 24
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 25
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 26
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 27
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 28
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 29
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 30
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 31
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 32
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 33
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 34
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 35
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 36
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 37
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 38
+      },
+      {
+        "action_budget": 1,
+        "actions": [],
+        "external": [],
+        "tick": 39
+      }
+    ],
+    "known_loss": 0,
+    "mode": "notifications",
+    "peak_actual_loss_plus_inflight": 1,
+    "peak_booked_exposure": 4,
+    "pending": 4,
+    "policy_observations": 4,
+    "recover_at": 10,
+    "recovered_receipts": 0,
+    "replay_verified": true,
+    "returned": 8,
+    "rounds": 20,
+    "scenario": "cooperative",
+    "schema": "openworld.two-agents.receipts.v0",
+    "sent": 8,
+    "trace": [
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 1,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-2",
+        "pending": 1,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 1,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 1,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 1,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 2,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-4",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 3,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 4,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 3,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-6",
+        "pending": 3,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 5,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 3,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 3,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 6,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-8",
+        "pending": 4,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 7,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 4,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 4,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 8,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 0,
+        "notification": "none",
+        "pending": 4,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 9,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 0,
+        "notification": "none",
+        "pending": 4,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 10,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 0,
+        "notification": "none",
+        "pending": 4,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 11,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 0,
+        "notification": "none",
+        "pending": 4,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 12,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 0,
+        "notification": "none",
+        "pending": 4,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 13,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 0,
+        "notification": "none",
+        "pending": 4,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 14,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 0,
+        "notification": "none",
+        "pending": 4,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 15,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 0,
+        "notification": "none",
+        "pending": 4,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 16,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 0,
+        "notification": "none",
+        "pending": 4,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 17,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 0,
+        "notification": "none",
+        "pending": 4,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 18,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 0,
+        "notification": "none",
+        "pending": 4,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 19,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 4,
+        "delivered": 0,
+        "gift": false,
+        "known_loss": 0,
+        "notification": "none",
+        "pending": 4,
+        "recovered_receipts": 0,
+        "return": false,
+        "round": 20,
+        "timeout_releases": 0
+      }
+    ],
+    "unsafe_releases": 0
+  },
+  {
+    "actual_loss": 0,
+    "agents": [
+      "A",
+      "B"
+    ],
+    "balances": {
+      "A": 8,
+      "B": 0
+    },
+    "delay": 1,
+    "delivered_observations": 10,
+    "drop_every": 2,
+    "dropped_notifications": 10,
+    "duplicates_ignored": 0,
+    "events": [
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "6fbfc92e29df709719a54a69a49ce3afe4bb41c830ff053291397393785d0ed3",
+        "kind": "transfer",
+        "prev_hash": "GENESIS",
+        "provenance": "SIMULATED",
+        "sequence": 1,
+        "target": "B",
+        "tick": 0
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "0d97ac647c8e33a9f041997b04a210a2fdbfbf4019c3616e6315bfb0d935e94a",
+        "kind": "transfer",
+        "prev_hash": "6fbfc92e29df709719a54a69a49ce3afe4bb41c830ff053291397393785d0ed3",
+        "provenance": "SIMULATED",
+        "sequence": 2,
+        "target": "A",
+        "tick": 1
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "02c57429d2b8afd3bf6f6e6df4a5681777f10aa4f7a8d71f7e1eefd807e41945",
+        "kind": "transfer",
+        "prev_hash": "0d97ac647c8e33a9f041997b04a210a2fdbfbf4019c3616e6315bfb0d935e94a",
+        "provenance": "SIMULATED",
+        "sequence": 3,
+        "target": "B",
+        "tick": 2
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "85db1f98aefe7b39c26c50972581fca6b82553223323a8cce117827c1297a209",
+        "kind": "transfer",
+        "prev_hash": "02c57429d2b8afd3bf6f6e6df4a5681777f10aa4f7a8d71f7e1eefd807e41945",
+        "provenance": "SIMULATED",
+        "sequence": 4,
+        "target": "A",
+        "tick": 3
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "394890940cbc2f6c66244c88ff11b1d0745ec0f25b529a0df49771444a77605c",
+        "kind": "transfer",
+        "prev_hash": "85db1f98aefe7b39c26c50972581fca6b82553223323a8cce117827c1297a209",
+        "provenance": "SIMULATED",
+        "sequence": 5,
+        "target": "B",
+        "tick": 4
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "0a4642117a8b1f7e5cc9355a3ab5374a1e25b55a1aaa85ae6322d89d99bacca7",
+        "kind": "transfer",
+        "prev_hash": "394890940cbc2f6c66244c88ff11b1d0745ec0f25b529a0df49771444a77605c",
+        "provenance": "SIMULATED",
+        "sequence": 6,
+        "target": "A",
+        "tick": 5
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "415ccd7b04a71087de7aa931a727c97573701a40ed815c415b32b021c6194161",
+        "kind": "transfer",
+        "prev_hash": "0a4642117a8b1f7e5cc9355a3ab5374a1e25b55a1aaa85ae6322d89d99bacca7",
+        "provenance": "SIMULATED",
+        "sequence": 7,
+        "target": "B",
+        "tick": 6
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "46ad0307b6a673784229070d24c558beacb9c9a95303067c6b96e65b7556b871",
+        "kind": "transfer",
+        "prev_hash": "415ccd7b04a71087de7aa931a727c97573701a40ed815c415b32b021c6194161",
+        "provenance": "SIMULATED",
+        "sequence": 8,
+        "target": "A",
+        "tick": 7
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "a924e9faf00aa0f590e0e73d8af89c627815e668fca56ad9ac6a3bf0743a8ae2",
+        "kind": "transfer",
+        "prev_hash": "46ad0307b6a673784229070d24c558beacb9c9a95303067c6b96e65b7556b871",
+        "provenance": "SIMULATED",
+        "sequence": 9,
+        "target": "B",
+        "tick": 8
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "d86c1ea6cf57d6f74da28d0b2ed7aa6ee960793e6bc17188f339758e2ae71944",
+        "kind": "transfer",
+        "prev_hash": "a924e9faf00aa0f590e0e73d8af89c627815e668fca56ad9ac6a3bf0743a8ae2",
+        "provenance": "SIMULATED",
+        "sequence": 10,
+        "target": "A",
+        "tick": 9
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "b872ddcfdccd1a1700b1c2d636bcc0fb89bc15e91b019fbf5fdb475999bbf8c2",
+        "kind": "transfer",
+        "prev_hash": "d86c1ea6cf57d6f74da28d0b2ed7aa6ee960793e6bc17188f339758e2ae71944",
+        "provenance": "SIMULATED",
+        "sequence": 11,
+        "target": "B",
+        "tick": 10
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "fa3c18829cd9634206ccd86a479a1a25921db387543e5db60a41e2cf98fd954e",
+        "kind": "transfer",
+        "prev_hash": "b872ddcfdccd1a1700b1c2d636bcc0fb89bc15e91b019fbf5fdb475999bbf8c2",
+        "provenance": "SIMULATED",
+        "sequence": 12,
+        "target": "A",
+        "tick": 11
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "574410231329543e6194c7d8a4414475e663d1e8b55257169a56db5b1bfacb77",
+        "kind": "transfer",
+        "prev_hash": "fa3c18829cd9634206ccd86a479a1a25921db387543e5db60a41e2cf98fd954e",
+        "provenance": "SIMULATED",
+        "sequence": 13,
+        "target": "B",
+        "tick": 12
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "39f20c2b2608c848a16a4e4d035606cd8eef6509c6f893d6f7b673dd2c1b6ab4",
+        "kind": "transfer",
+        "prev_hash": "574410231329543e6194c7d8a4414475e663d1e8b55257169a56db5b1bfacb77",
+        "provenance": "SIMULATED",
+        "sequence": 14,
+        "target": "A",
+        "tick": 13
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "acac2d816c1ef5c93b614e4fe5ff856226d2560c529b9305a25e0a025abfa988",
+        "kind": "transfer",
+        "prev_hash": "39f20c2b2608c848a16a4e4d035606cd8eef6509c6f893d6f7b673dd2c1b6ab4",
+        "provenance": "SIMULATED",
+        "sequence": 15,
+        "target": "B",
+        "tick": 14
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "40c1d080ed3188f9d737202e77295d8c1f7a58310e5e88f8426500ccac1fe9f2",
+        "kind": "transfer",
+        "prev_hash": "acac2d816c1ef5c93b614e4fe5ff856226d2560c529b9305a25e0a025abfa988",
+        "provenance": "SIMULATED",
+        "sequence": 16,
+        "target": "A",
+        "tick": 15
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "c9593d710ae9e3b6766a2e4c0aa96aebd7b681879f3a1c31e2250034c2853422",
+        "kind": "transfer",
+        "prev_hash": "40c1d080ed3188f9d737202e77295d8c1f7a58310e5e88f8426500ccac1fe9f2",
+        "provenance": "SIMULATED",
+        "sequence": 17,
+        "target": "B",
+        "tick": 16
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "4b00b5a5b8eb54d5dcfaf2d4d5143e8fd99dee1adbbc21e6b382dfae0d08a5d7",
+        "kind": "transfer",
+        "prev_hash": "c9593d710ae9e3b6766a2e4c0aa96aebd7b681879f3a1c31e2250034c2853422",
+        "provenance": "SIMULATED",
+        "sequence": 18,
+        "target": "A",
+        "tick": 17
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "f76c74e7eda71dcd9a156438bd017b8a6478e1d1573641780b3298a5f091d977",
+        "kind": "transfer",
+        "prev_hash": "4b00b5a5b8eb54d5dcfaf2d4d5143e8fd99dee1adbbc21e6b382dfae0d08a5d7",
+        "provenance": "SIMULATED",
+        "sequence": 19,
+        "target": "B",
+        "tick": 18
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "37542085bf4367bbaf1236d7d54370bbe818835990ceb40629b45998fc56338e",
+        "kind": "transfer",
+        "prev_hash": "f76c74e7eda71dcd9a156438bd017b8a6478e1d1573641780b3298a5f091d977",
+        "provenance": "SIMULATED",
+        "sequence": 20,
+        "target": "A",
+        "tick": 19
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "aa92ff8f23b7e526bbab47e586d33a0cf7daf81592ff8f4d4d50c8a9becfdebe",
+        "kind": "transfer",
+        "prev_hash": "37542085bf4367bbaf1236d7d54370bbe818835990ceb40629b45998fc56338e",
+        "provenance": "SIMULATED",
+        "sequence": 21,
+        "target": "B",
+        "tick": 20
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "4924a275bd3f287ef67349e5065de484496a3095eb64afdbcc8b721b5841dd78",
+        "kind": "transfer",
+        "prev_hash": "aa92ff8f23b7e526bbab47e586d33a0cf7daf81592ff8f4d4d50c8a9becfdebe",
+        "provenance": "SIMULATED",
+        "sequence": 22,
+        "target": "A",
+        "tick": 21
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "6c10093ea0ec9c3f484264f66c866d4b540317b69ecc6a9d8ee64effa2aea5ef",
+        "kind": "transfer",
+        "prev_hash": "4924a275bd3f287ef67349e5065de484496a3095eb64afdbcc8b721b5841dd78",
+        "provenance": "SIMULATED",
+        "sequence": 23,
+        "target": "B",
+        "tick": 22
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "075c557dc9dceaf71e22d997f5a5d6c7857788af9c590d356bd6a49938bcf59b",
+        "kind": "transfer",
+        "prev_hash": "6c10093ea0ec9c3f484264f66c866d4b540317b69ecc6a9d8ee64effa2aea5ef",
+        "provenance": "SIMULATED",
+        "sequence": 24,
+        "target": "A",
+        "tick": 23
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "5620ceb774b5bc5827d877d6ca78845c4ac3d7fcebeb3e06ec719ce7da9e475e",
+        "kind": "transfer",
+        "prev_hash": "075c557dc9dceaf71e22d997f5a5d6c7857788af9c590d356bd6a49938bcf59b",
+        "provenance": "SIMULATED",
+        "sequence": 25,
+        "target": "B",
+        "tick": 24
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "47f7bee1b1470ec1524d6f1432c48ddcbfa17419507924386429916920457d56",
+        "kind": "transfer",
+        "prev_hash": "5620ceb774b5bc5827d877d6ca78845c4ac3d7fcebeb3e06ec719ce7da9e475e",
+        "provenance": "SIMULATED",
+        "sequence": 26,
+        "target": "A",
+        "tick": 25
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "0aba0bbb5fe738bfee4d1c9da8577e70d4c42bf00f9b0830dfd190df877ed431",
+        "kind": "transfer",
+        "prev_hash": "47f7bee1b1470ec1524d6f1432c48ddcbfa17419507924386429916920457d56",
+        "provenance": "SIMULATED",
+        "sequence": 27,
+        "target": "B",
+        "tick": 26
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "08ddf28eacef3ee9aa3f3ee2924b243143202ea1276898b120eadfcbb930c339",
+        "kind": "transfer",
+        "prev_hash": "0aba0bbb5fe738bfee4d1c9da8577e70d4c42bf00f9b0830dfd190df877ed431",
+        "provenance": "SIMULATED",
+        "sequence": 28,
+        "target": "A",
+        "tick": 27
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "f8f7a05528d039d1d1f4738626eb956445626a3977dd5e2c8380c4ab404e5a87",
+        "kind": "transfer",
+        "prev_hash": "08ddf28eacef3ee9aa3f3ee2924b243143202ea1276898b120eadfcbb930c339",
+        "provenance": "SIMULATED",
+        "sequence": 29,
+        "target": "B",
+        "tick": 28
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "a13d471c5b9e8825b02bc819ae82cdc8e9df07863b7b7f710ff68d37b46dd6bf",
+        "kind": "transfer",
+        "prev_hash": "f8f7a05528d039d1d1f4738626eb956445626a3977dd5e2c8380c4ab404e5a87",
+        "provenance": "SIMULATED",
+        "sequence": 30,
+        "target": "A",
+        "tick": 29
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "7584ccdaf89a259ba44288828f7236bfccf71c338c57029c2dd80213f5843f48",
+        "kind": "transfer",
+        "prev_hash": "a13d471c5b9e8825b02bc819ae82cdc8e9df07863b7b7f710ff68d37b46dd6bf",
+        "provenance": "SIMULATED",
+        "sequence": 31,
+        "target": "B",
+        "tick": 30
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "9fe698d50a715e5a454137fbd5eab9448744fe1c3c65b7f0a1ea334fa0d58896",
+        "kind": "transfer",
+        "prev_hash": "7584ccdaf89a259ba44288828f7236bfccf71c338c57029c2dd80213f5843f48",
+        "provenance": "SIMULATED",
+        "sequence": 32,
+        "target": "A",
+        "tick": 31
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "9b54cff77de55369de24f57444a2577931b744da6086fd781c40b7a6532796a7",
+        "kind": "transfer",
+        "prev_hash": "9fe698d50a715e5a454137fbd5eab9448744fe1c3c65b7f0a1ea334fa0d58896",
+        "provenance": "SIMULATED",
+        "sequence": 33,
+        "target": "B",
+        "tick": 32
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "ffe8c5469e52336bb463981e590a64c6dca299c4295ad978601f786b3f4db360",
+        "kind": "transfer",
+        "prev_hash": "9b54cff77de55369de24f57444a2577931b744da6086fd781c40b7a6532796a7",
+        "provenance": "SIMULATED",
+        "sequence": 34,
+        "target": "A",
+        "tick": 33
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "808f67f8e82d9b1b8b878c71c3089ebaf9d031fb3c1e323e4f0d99149771041e",
+        "kind": "transfer",
+        "prev_hash": "ffe8c5469e52336bb463981e590a64c6dca299c4295ad978601f786b3f4db360",
+        "provenance": "SIMULATED",
+        "sequence": 35,
+        "target": "B",
+        "tick": 34
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "d83de0220338a20edd1caf5fa36512223ab639d37fc2781dbea373f31f5a160a",
+        "kind": "transfer",
+        "prev_hash": "808f67f8e82d9b1b8b878c71c3089ebaf9d031fb3c1e323e4f0d99149771041e",
+        "provenance": "SIMULATED",
+        "sequence": 36,
+        "target": "A",
+        "tick": 35
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "30ab3a88521ccfb5160bddd476cda557d6e2ad897811a5fae6abd5de86d466b0",
+        "kind": "transfer",
+        "prev_hash": "d83de0220338a20edd1caf5fa36512223ab639d37fc2781dbea373f31f5a160a",
+        "provenance": "SIMULATED",
+        "sequence": 37,
+        "target": "B",
+        "tick": 36
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "696cc5b016807341da24ac81ca5ed39cd2bbeebcfc2b96dbe448bf19f07db9d0",
+        "kind": "transfer",
+        "prev_hash": "30ab3a88521ccfb5160bddd476cda557d6e2ad897811a5fae6abd5de86d466b0",
+        "provenance": "SIMULATED",
+        "sequence": 38,
+        "target": "A",
+        "tick": 37
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "22bb018a4847d79a17c13c289f2bf8228bc8a1c7d0b02dd29c443eb49d491932",
+        "kind": "transfer",
+        "prev_hash": "696cc5b016807341da24ac81ca5ed39cd2bbeebcfc2b96dbe448bf19f07db9d0",
+        "provenance": "SIMULATED",
+        "sequence": 39,
+        "target": "B",
+        "tick": 38
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "3c463f9802c858ae90946ab116380a88c53195203eab064cbed444f88d22419e",
+        "kind": "transfer",
+        "prev_hash": "22bb018a4847d79a17c13c289f2bf8228bc8a1c7d0b02dd29c443eb49d491932",
+        "provenance": "SIMULATED",
+        "sequence": 40,
+        "target": "A",
+        "tick": 39
+      }
+    ],
+    "final_fingerprint": "e572beae39b64973919db6da0843334e666f7c355f9b36499d6892d8d4a4ac74",
+    "genesis": {
+      "agents": [
+        {
+          "agent_id": "A",
+          "owner_id": "two-agent-owner",
+          "region": "local",
+          "resources": 8
+        },
+        {
+          "agent_id": "B",
+          "owner_id": "two-agent-owner",
+          "region": "local",
+          "resources": 0
+        }
+      ],
+      "balances": [
+        [
+          "A",
+          8
+        ],
+        [
+          "B",
+          0
+        ]
+      ],
+      "events": [],
+      "graph": [
+        [
+          "A",
+          [
+            "B"
+          ]
+        ],
+        [
+          "B",
+          [
+            "A"
+          ]
+        ]
+      ],
+      "journal": [],
+      "processed_ids": [],
+      "seed": 2026,
+      "tick": 0,
+      "weather": [
+        [
+          "local",
+          "clear"
+        ]
+      ]
+    },
+    "journal": [
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-0",
+            "target": "B",
+            "tick": 0
+          }
+        ],
+        "external": [],
+        "tick": 0
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-0",
+            "target": "A",
+            "tick": 1
+          }
+        ],
+        "external": [],
+        "tick": 1
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-1",
+            "target": "B",
+            "tick": 2
+          }
+        ],
+        "external": [],
+        "tick": 2
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-1",
+            "target": "A",
+            "tick": 3
+          }
+        ],
+        "external": [],
+        "tick": 3
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-2",
+            "target": "B",
+            "tick": 4
+          }
+        ],
+        "external": [],
+        "tick": 4
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-2",
+            "target": "A",
+            "tick": 5
+          }
+        ],
+        "external": [],
+        "tick": 5
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-3",
+            "target": "B",
+            "tick": 6
+          }
+        ],
+        "external": [],
+        "tick": 6
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-3",
+            "target": "A",
+            "tick": 7
+          }
+        ],
+        "external": [],
+        "tick": 7
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-4",
+            "target": "B",
+            "tick": 8
+          }
+        ],
+        "external": [],
+        "tick": 8
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-4",
+            "target": "A",
+            "tick": 9
+          }
+        ],
+        "external": [],
+        "tick": 9
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-5",
+            "target": "B",
+            "tick": 10
+          }
+        ],
+        "external": [],
+        "tick": 10
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-5",
+            "target": "A",
+            "tick": 11
+          }
+        ],
+        "external": [],
+        "tick": 11
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-6",
+            "target": "B",
+            "tick": 12
+          }
+        ],
+        "external": [],
+        "tick": 12
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-6",
+            "target": "A",
+            "tick": 13
+          }
+        ],
+        "external": [],
+        "tick": 13
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-7",
+            "target": "B",
+            "tick": 14
+          }
+        ],
+        "external": [],
+        "tick": 14
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-7",
+            "target": "A",
+            "tick": 15
+          }
+        ],
+        "external": [],
+        "tick": 15
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-8",
+            "target": "B",
+            "tick": 16
+          }
+        ],
+        "external": [],
+        "tick": 16
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-8",
+            "target": "A",
+            "tick": 17
+          }
+        ],
+        "external": [],
+        "tick": 17
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-9",
+            "target": "B",
+            "tick": 18
+          }
+        ],
+        "external": [],
+        "tick": 18
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-9",
+            "target": "A",
+            "tick": 19
+          }
+        ],
+        "external": [],
+        "tick": 19
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-10",
+            "target": "B",
+            "tick": 20
+          }
+        ],
+        "external": [],
+        "tick": 20
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-10",
+            "target": "A",
+            "tick": 21
+          }
+        ],
+        "external": [],
+        "tick": 21
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-11",
+            "target": "B",
+            "tick": 22
+          }
+        ],
+        "external": [],
+        "tick": 22
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-11",
+            "target": "A",
+            "tick": 23
+          }
+        ],
+        "external": [],
+        "tick": 23
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-12",
+            "target": "B",
+            "tick": 24
+          }
+        ],
+        "external": [],
+        "tick": 24
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-12",
+            "target": "A",
+            "tick": 25
+          }
+        ],
+        "external": [],
+        "tick": 25
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-13",
+            "target": "B",
+            "tick": 26
+          }
+        ],
+        "external": [],
+        "tick": 26
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-13",
+            "target": "A",
+            "tick": 27
+          }
+        ],
+        "external": [],
+        "tick": 27
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-14",
+            "target": "B",
+            "tick": 28
+          }
+        ],
+        "external": [],
+        "tick": 28
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-14",
+            "target": "A",
+            "tick": 29
+          }
+        ],
+        "external": [],
+        "tick": 29
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-15",
+            "target": "B",
+            "tick": 30
+          }
+        ],
+        "external": [],
+        "tick": 30
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-15",
+            "target": "A",
+            "tick": 31
+          }
+        ],
+        "external": [],
+        "tick": 31
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-16",
+            "target": "B",
+            "tick": 32
+          }
+        ],
+        "external": [],
+        "tick": 32
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-16",
+            "target": "A",
+            "tick": 33
+          }
+        ],
+        "external": [],
+        "tick": 33
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-17",
+            "target": "B",
+            "tick": 34
+          }
+        ],
+        "external": [],
+        "tick": 34
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-17",
+            "target": "A",
+            "tick": 35
+          }
+        ],
+        "external": [],
+        "tick": 35
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-18",
+            "target": "B",
+            "tick": 36
+          }
+        ],
+        "external": [],
+        "tick": 36
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-18",
+            "target": "A",
+            "tick": 37
+          }
+        ],
+        "external": [],
+        "tick": 37
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-19",
+            "target": "B",
+            "tick": 38
+          }
+        ],
+        "external": [],
+        "tick": 38
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-19",
+            "target": "A",
+            "tick": 39
+          }
+        ],
+        "external": [],
+        "tick": 39
+      }
+    ],
+    "known_loss": 0,
+    "mode": "reconcile",
+    "peak_actual_loss_plus_inflight": 1,
+    "peak_booked_exposure": 2,
+    "pending": 1,
+    "policy_observations": 19,
+    "recover_at": 10,
+    "recovered_receipts": 9,
+    "replay_verified": true,
+    "returned": 20,
+    "rounds": 20,
+    "scenario": "cooperative",
+    "schema": "openworld.two-agents.receipts.v0",
+    "sent": 20,
+    "trace": [
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 1,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-2",
+        "pending": 1,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 1,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 1,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 1,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 2,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-4",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 3,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 1,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 1,
+        "recovered_receipts": 1,
+        "return": true,
+        "round": 4,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-6",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 5,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 6,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 1,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-8",
+        "pending": 1,
+        "recovered_receipts": 2,
+        "return": true,
+        "round": 7,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 1,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 1,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 8,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-10",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 9,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 1,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 1,
+        "recovered_receipts": 1,
+        "return": true,
+        "round": 10,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-12",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 11,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 12,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 1,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-14",
+        "pending": 1,
+        "recovered_receipts": 2,
+        "return": true,
+        "round": 13,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 1,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 1,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 14,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-16",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 15,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 1,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 1,
+        "recovered_receipts": 1,
+        "return": true,
+        "round": 16,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-18",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 17,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 18,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 1,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-20",
+        "pending": 1,
+        "recovered_receipts": 2,
+        "return": true,
+        "round": 19,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 1,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 1,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 20,
+        "timeout_releases": 0
+      }
+    ],
+    "unsafe_releases": 0
+  },
+  {
+    "actual_loss": 0,
+    "agents": [
+      "A",
+      "B"
+    ],
+    "balances": {
+      "A": 8,
+      "B": 0
+    },
+    "delay": 1,
+    "delivered_observations": 10,
+    "drop_every": 2,
+    "dropped_notifications": 10,
+    "duplicates_ignored": 0,
+    "events": [
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "6fbfc92e29df709719a54a69a49ce3afe4bb41c830ff053291397393785d0ed3",
+        "kind": "transfer",
+        "prev_hash": "GENESIS",
+        "provenance": "SIMULATED",
+        "sequence": 1,
+        "target": "B",
+        "tick": 0
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "0d97ac647c8e33a9f041997b04a210a2fdbfbf4019c3616e6315bfb0d935e94a",
+        "kind": "transfer",
+        "prev_hash": "6fbfc92e29df709719a54a69a49ce3afe4bb41c830ff053291397393785d0ed3",
+        "provenance": "SIMULATED",
+        "sequence": 2,
+        "target": "A",
+        "tick": 1
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "02c57429d2b8afd3bf6f6e6df4a5681777f10aa4f7a8d71f7e1eefd807e41945",
+        "kind": "transfer",
+        "prev_hash": "0d97ac647c8e33a9f041997b04a210a2fdbfbf4019c3616e6315bfb0d935e94a",
+        "provenance": "SIMULATED",
+        "sequence": 3,
+        "target": "B",
+        "tick": 2
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "85db1f98aefe7b39c26c50972581fca6b82553223323a8cce117827c1297a209",
+        "kind": "transfer",
+        "prev_hash": "02c57429d2b8afd3bf6f6e6df4a5681777f10aa4f7a8d71f7e1eefd807e41945",
+        "provenance": "SIMULATED",
+        "sequence": 4,
+        "target": "A",
+        "tick": 3
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "394890940cbc2f6c66244c88ff11b1d0745ec0f25b529a0df49771444a77605c",
+        "kind": "transfer",
+        "prev_hash": "85db1f98aefe7b39c26c50972581fca6b82553223323a8cce117827c1297a209",
+        "provenance": "SIMULATED",
+        "sequence": 5,
+        "target": "B",
+        "tick": 4
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "0a4642117a8b1f7e5cc9355a3ab5374a1e25b55a1aaa85ae6322d89d99bacca7",
+        "kind": "transfer",
+        "prev_hash": "394890940cbc2f6c66244c88ff11b1d0745ec0f25b529a0df49771444a77605c",
+        "provenance": "SIMULATED",
+        "sequence": 6,
+        "target": "A",
+        "tick": 5
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "415ccd7b04a71087de7aa931a727c97573701a40ed815c415b32b021c6194161",
+        "kind": "transfer",
+        "prev_hash": "0a4642117a8b1f7e5cc9355a3ab5374a1e25b55a1aaa85ae6322d89d99bacca7",
+        "provenance": "SIMULATED",
+        "sequence": 7,
+        "target": "B",
+        "tick": 6
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "46ad0307b6a673784229070d24c558beacb9c9a95303067c6b96e65b7556b871",
+        "kind": "transfer",
+        "prev_hash": "415ccd7b04a71087de7aa931a727c97573701a40ed815c415b32b021c6194161",
+        "provenance": "SIMULATED",
+        "sequence": 8,
+        "target": "A",
+        "tick": 7
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "a924e9faf00aa0f590e0e73d8af89c627815e668fca56ad9ac6a3bf0743a8ae2",
+        "kind": "transfer",
+        "prev_hash": "46ad0307b6a673784229070d24c558beacb9c9a95303067c6b96e65b7556b871",
+        "provenance": "SIMULATED",
+        "sequence": 9,
+        "target": "B",
+        "tick": 8
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "d86c1ea6cf57d6f74da28d0b2ed7aa6ee960793e6bc17188f339758e2ae71944",
+        "kind": "transfer",
+        "prev_hash": "a924e9faf00aa0f590e0e73d8af89c627815e668fca56ad9ac6a3bf0743a8ae2",
+        "provenance": "SIMULATED",
+        "sequence": 10,
+        "target": "A",
+        "tick": 9
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "b872ddcfdccd1a1700b1c2d636bcc0fb89bc15e91b019fbf5fdb475999bbf8c2",
+        "kind": "transfer",
+        "prev_hash": "d86c1ea6cf57d6f74da28d0b2ed7aa6ee960793e6bc17188f339758e2ae71944",
+        "provenance": "SIMULATED",
+        "sequence": 11,
+        "target": "B",
+        "tick": 10
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "fa3c18829cd9634206ccd86a479a1a25921db387543e5db60a41e2cf98fd954e",
+        "kind": "transfer",
+        "prev_hash": "b872ddcfdccd1a1700b1c2d636bcc0fb89bc15e91b019fbf5fdb475999bbf8c2",
+        "provenance": "SIMULATED",
+        "sequence": 12,
+        "target": "A",
+        "tick": 11
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "574410231329543e6194c7d8a4414475e663d1e8b55257169a56db5b1bfacb77",
+        "kind": "transfer",
+        "prev_hash": "fa3c18829cd9634206ccd86a479a1a25921db387543e5db60a41e2cf98fd954e",
+        "provenance": "SIMULATED",
+        "sequence": 13,
+        "target": "B",
+        "tick": 12
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "39f20c2b2608c848a16a4e4d035606cd8eef6509c6f893d6f7b673dd2c1b6ab4",
+        "kind": "transfer",
+        "prev_hash": "574410231329543e6194c7d8a4414475e663d1e8b55257169a56db5b1bfacb77",
+        "provenance": "SIMULATED",
+        "sequence": 14,
+        "target": "A",
+        "tick": 13
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "acac2d816c1ef5c93b614e4fe5ff856226d2560c529b9305a25e0a025abfa988",
+        "kind": "transfer",
+        "prev_hash": "39f20c2b2608c848a16a4e4d035606cd8eef6509c6f893d6f7b673dd2c1b6ab4",
+        "provenance": "SIMULATED",
+        "sequence": 15,
+        "target": "B",
+        "tick": 14
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "40c1d080ed3188f9d737202e77295d8c1f7a58310e5e88f8426500ccac1fe9f2",
+        "kind": "transfer",
+        "prev_hash": "acac2d816c1ef5c93b614e4fe5ff856226d2560c529b9305a25e0a025abfa988",
+        "provenance": "SIMULATED",
+        "sequence": 16,
+        "target": "A",
+        "tick": 15
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "c9593d710ae9e3b6766a2e4c0aa96aebd7b681879f3a1c31e2250034c2853422",
+        "kind": "transfer",
+        "prev_hash": "40c1d080ed3188f9d737202e77295d8c1f7a58310e5e88f8426500ccac1fe9f2",
+        "provenance": "SIMULATED",
+        "sequence": 17,
+        "target": "B",
+        "tick": 16
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "4b00b5a5b8eb54d5dcfaf2d4d5143e8fd99dee1adbbc21e6b382dfae0d08a5d7",
+        "kind": "transfer",
+        "prev_hash": "c9593d710ae9e3b6766a2e4c0aa96aebd7b681879f3a1c31e2250034c2853422",
+        "provenance": "SIMULATED",
+        "sequence": 18,
+        "target": "A",
+        "tick": 17
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "f76c74e7eda71dcd9a156438bd017b8a6478e1d1573641780b3298a5f091d977",
+        "kind": "transfer",
+        "prev_hash": "4b00b5a5b8eb54d5dcfaf2d4d5143e8fd99dee1adbbc21e6b382dfae0d08a5d7",
+        "provenance": "SIMULATED",
+        "sequence": 19,
+        "target": "B",
+        "tick": 18
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "37542085bf4367bbaf1236d7d54370bbe818835990ceb40629b45998fc56338e",
+        "kind": "transfer",
+        "prev_hash": "f76c74e7eda71dcd9a156438bd017b8a6478e1d1573641780b3298a5f091d977",
+        "provenance": "SIMULATED",
+        "sequence": 20,
+        "target": "A",
+        "tick": 19
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "aa92ff8f23b7e526bbab47e586d33a0cf7daf81592ff8f4d4d50c8a9becfdebe",
+        "kind": "transfer",
+        "prev_hash": "37542085bf4367bbaf1236d7d54370bbe818835990ceb40629b45998fc56338e",
+        "provenance": "SIMULATED",
+        "sequence": 21,
+        "target": "B",
+        "tick": 20
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "4924a275bd3f287ef67349e5065de484496a3095eb64afdbcc8b721b5841dd78",
+        "kind": "transfer",
+        "prev_hash": "aa92ff8f23b7e526bbab47e586d33a0cf7daf81592ff8f4d4d50c8a9becfdebe",
+        "provenance": "SIMULATED",
+        "sequence": 22,
+        "target": "A",
+        "tick": 21
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "6c10093ea0ec9c3f484264f66c866d4b540317b69ecc6a9d8ee64effa2aea5ef",
+        "kind": "transfer",
+        "prev_hash": "4924a275bd3f287ef67349e5065de484496a3095eb64afdbcc8b721b5841dd78",
+        "provenance": "SIMULATED",
+        "sequence": 23,
+        "target": "B",
+        "tick": 22
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "075c557dc9dceaf71e22d997f5a5d6c7857788af9c590d356bd6a49938bcf59b",
+        "kind": "transfer",
+        "prev_hash": "6c10093ea0ec9c3f484264f66c866d4b540317b69ecc6a9d8ee64effa2aea5ef",
+        "provenance": "SIMULATED",
+        "sequence": 24,
+        "target": "A",
+        "tick": 23
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "5620ceb774b5bc5827d877d6ca78845c4ac3d7fcebeb3e06ec719ce7da9e475e",
+        "kind": "transfer",
+        "prev_hash": "075c557dc9dceaf71e22d997f5a5d6c7857788af9c590d356bd6a49938bcf59b",
+        "provenance": "SIMULATED",
+        "sequence": 25,
+        "target": "B",
+        "tick": 24
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "47f7bee1b1470ec1524d6f1432c48ddcbfa17419507924386429916920457d56",
+        "kind": "transfer",
+        "prev_hash": "5620ceb774b5bc5827d877d6ca78845c4ac3d7fcebeb3e06ec719ce7da9e475e",
+        "provenance": "SIMULATED",
+        "sequence": 26,
+        "target": "A",
+        "tick": 25
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "0aba0bbb5fe738bfee4d1c9da8577e70d4c42bf00f9b0830dfd190df877ed431",
+        "kind": "transfer",
+        "prev_hash": "47f7bee1b1470ec1524d6f1432c48ddcbfa17419507924386429916920457d56",
+        "provenance": "SIMULATED",
+        "sequence": 27,
+        "target": "B",
+        "tick": 26
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "08ddf28eacef3ee9aa3f3ee2924b243143202ea1276898b120eadfcbb930c339",
+        "kind": "transfer",
+        "prev_hash": "0aba0bbb5fe738bfee4d1c9da8577e70d4c42bf00f9b0830dfd190df877ed431",
+        "provenance": "SIMULATED",
+        "sequence": 28,
+        "target": "A",
+        "tick": 27
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "f8f7a05528d039d1d1f4738626eb956445626a3977dd5e2c8380c4ab404e5a87",
+        "kind": "transfer",
+        "prev_hash": "08ddf28eacef3ee9aa3f3ee2924b243143202ea1276898b120eadfcbb930c339",
+        "provenance": "SIMULATED",
+        "sequence": 29,
+        "target": "B",
+        "tick": 28
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "a13d471c5b9e8825b02bc819ae82cdc8e9df07863b7b7f710ff68d37b46dd6bf",
+        "kind": "transfer",
+        "prev_hash": "f8f7a05528d039d1d1f4738626eb956445626a3977dd5e2c8380c4ab404e5a87",
+        "provenance": "SIMULATED",
+        "sequence": 30,
+        "target": "A",
+        "tick": 29
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "7584ccdaf89a259ba44288828f7236bfccf71c338c57029c2dd80213f5843f48",
+        "kind": "transfer",
+        "prev_hash": "a13d471c5b9e8825b02bc819ae82cdc8e9df07863b7b7f710ff68d37b46dd6bf",
+        "provenance": "SIMULATED",
+        "sequence": 31,
+        "target": "B",
+        "tick": 30
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "9fe698d50a715e5a454137fbd5eab9448744fe1c3c65b7f0a1ea334fa0d58896",
+        "kind": "transfer",
+        "prev_hash": "7584ccdaf89a259ba44288828f7236bfccf71c338c57029c2dd80213f5843f48",
+        "provenance": "SIMULATED",
+        "sequence": 32,
+        "target": "A",
+        "tick": 31
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "9b54cff77de55369de24f57444a2577931b744da6086fd781c40b7a6532796a7",
+        "kind": "transfer",
+        "prev_hash": "9fe698d50a715e5a454137fbd5eab9448744fe1c3c65b7f0a1ea334fa0d58896",
+        "provenance": "SIMULATED",
+        "sequence": 33,
+        "target": "B",
+        "tick": 32
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "ffe8c5469e52336bb463981e590a64c6dca299c4295ad978601f786b3f4db360",
+        "kind": "transfer",
+        "prev_hash": "9b54cff77de55369de24f57444a2577931b744da6086fd781c40b7a6532796a7",
+        "provenance": "SIMULATED",
+        "sequence": 34,
+        "target": "A",
+        "tick": 33
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "808f67f8e82d9b1b8b878c71c3089ebaf9d031fb3c1e323e4f0d99149771041e",
+        "kind": "transfer",
+        "prev_hash": "ffe8c5469e52336bb463981e590a64c6dca299c4295ad978601f786b3f4db360",
+        "provenance": "SIMULATED",
+        "sequence": 35,
+        "target": "B",
+        "tick": 34
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "d83de0220338a20edd1caf5fa36512223ab639d37fc2781dbea373f31f5a160a",
+        "kind": "transfer",
+        "prev_hash": "808f67f8e82d9b1b8b878c71c3089ebaf9d031fb3c1e323e4f0d99149771041e",
+        "provenance": "SIMULATED",
+        "sequence": 36,
+        "target": "A",
+        "tick": 35
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "30ab3a88521ccfb5160bddd476cda557d6e2ad897811a5fae6abd5de86d466b0",
+        "kind": "transfer",
+        "prev_hash": "d83de0220338a20edd1caf5fa36512223ab639d37fc2781dbea373f31f5a160a",
+        "provenance": "SIMULATED",
+        "sequence": 37,
+        "target": "B",
+        "tick": 36
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "696cc5b016807341da24ac81ca5ed39cd2bbeebcfc2b96dbe448bf19f07db9d0",
+        "kind": "transfer",
+        "prev_hash": "30ab3a88521ccfb5160bddd476cda557d6e2ad897811a5fae6abd5de86d466b0",
+        "provenance": "SIMULATED",
+        "sequence": 38,
+        "target": "A",
+        "tick": 37
+      },
+      {
+        "actor": "A",
+        "amount": 1,
+        "digest": "22bb018a4847d79a17c13c289f2bf8228bc8a1c7d0b02dd29c443eb49d491932",
+        "kind": "transfer",
+        "prev_hash": "696cc5b016807341da24ac81ca5ed39cd2bbeebcfc2b96dbe448bf19f07db9d0",
+        "provenance": "SIMULATED",
+        "sequence": 39,
+        "target": "B",
+        "tick": 38
+      },
+      {
+        "actor": "B",
+        "amount": 1,
+        "digest": "3c463f9802c858ae90946ab116380a88c53195203eab064cbed444f88d22419e",
+        "kind": "transfer",
+        "prev_hash": "22bb018a4847d79a17c13c289f2bf8228bc8a1c7d0b02dd29c443eb49d491932",
+        "provenance": "SIMULATED",
+        "sequence": 40,
+        "target": "A",
+        "tick": 39
+      }
+    ],
+    "final_fingerprint": "e572beae39b64973919db6da0843334e666f7c355f9b36499d6892d8d4a4ac74",
+    "genesis": {
+      "agents": [
+        {
+          "agent_id": "A",
+          "owner_id": "two-agent-owner",
+          "region": "local",
+          "resources": 8
+        },
+        {
+          "agent_id": "B",
+          "owner_id": "two-agent-owner",
+          "region": "local",
+          "resources": 0
+        }
+      ],
+      "balances": [
+        [
+          "A",
+          8
+        ],
+        [
+          "B",
+          0
+        ]
+      ],
+      "events": [],
+      "graph": [
+        [
+          "A",
+          [
+            "B"
+          ]
+        ],
+        [
+          "B",
+          [
+            "A"
+          ]
+        ]
+      ],
+      "journal": [],
+      "processed_ids": [],
+      "seed": 2026,
+      "tick": 0,
+      "weather": [
+        [
+          "local",
+          "clear"
+        ]
+      ]
+    },
+    "journal": [
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-0",
+            "target": "B",
+            "tick": 0
+          }
+        ],
+        "external": [],
+        "tick": 0
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-0",
+            "target": "A",
+            "tick": 1
+          }
+        ],
+        "external": [],
+        "tick": 1
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-1",
+            "target": "B",
+            "tick": 2
+          }
+        ],
+        "external": [],
+        "tick": 2
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-1",
+            "target": "A",
+            "tick": 3
+          }
+        ],
+        "external": [],
+        "tick": 3
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-2",
+            "target": "B",
+            "tick": 4
+          }
+        ],
+        "external": [],
+        "tick": 4
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-2",
+            "target": "A",
+            "tick": 5
+          }
+        ],
+        "external": [],
+        "tick": 5
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-3",
+            "target": "B",
+            "tick": 6
+          }
+        ],
+        "external": [],
+        "tick": 6
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-3",
+            "target": "A",
+            "tick": 7
+          }
+        ],
+        "external": [],
+        "tick": 7
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-4",
+            "target": "B",
+            "tick": 8
+          }
+        ],
+        "external": [],
+        "tick": 8
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-4",
+            "target": "A",
+            "tick": 9
+          }
+        ],
+        "external": [],
+        "tick": 9
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-5",
+            "target": "B",
+            "tick": 10
+          }
+        ],
+        "external": [],
+        "tick": 10
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-5",
+            "target": "A",
+            "tick": 11
+          }
+        ],
+        "external": [],
+        "tick": 11
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-6",
+            "target": "B",
+            "tick": 12
+          }
+        ],
+        "external": [],
+        "tick": 12
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-6",
+            "target": "A",
+            "tick": 13
+          }
+        ],
+        "external": [],
+        "tick": 13
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-7",
+            "target": "B",
+            "tick": 14
+          }
+        ],
+        "external": [],
+        "tick": 14
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-7",
+            "target": "A",
+            "tick": 15
+          }
+        ],
+        "external": [],
+        "tick": 15
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-8",
+            "target": "B",
+            "tick": 16
+          }
+        ],
+        "external": [],
+        "tick": 16
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-8",
+            "target": "A",
+            "tick": 17
+          }
+        ],
+        "external": [],
+        "tick": 17
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-9",
+            "target": "B",
+            "tick": 18
+          }
+        ],
+        "external": [],
+        "tick": 18
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-9",
+            "target": "A",
+            "tick": 19
+          }
+        ],
+        "external": [],
+        "tick": 19
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-10",
+            "target": "B",
+            "tick": 20
+          }
+        ],
+        "external": [],
+        "tick": 20
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-10",
+            "target": "A",
+            "tick": 21
+          }
+        ],
+        "external": [],
+        "tick": 21
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-11",
+            "target": "B",
+            "tick": 22
+          }
+        ],
+        "external": [],
+        "tick": 22
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-11",
+            "target": "A",
+            "tick": 23
+          }
+        ],
+        "external": [],
+        "tick": 23
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-12",
+            "target": "B",
+            "tick": 24
+          }
+        ],
+        "external": [],
+        "tick": 24
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-12",
+            "target": "A",
+            "tick": 25
+          }
+        ],
+        "external": [],
+        "tick": 25
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-13",
+            "target": "B",
+            "tick": 26
+          }
+        ],
+        "external": [],
+        "tick": 26
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-13",
+            "target": "A",
+            "tick": 27
+          }
+        ],
+        "external": [],
+        "tick": 27
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-14",
+            "target": "B",
+            "tick": 28
+          }
+        ],
+        "external": [],
+        "tick": 28
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-14",
+            "target": "A",
+            "tick": 29
+          }
+        ],
+        "external": [],
+        "tick": 29
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-15",
+            "target": "B",
+            "tick": 30
+          }
+        ],
+        "external": [],
+        "tick": 30
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-15",
+            "target": "A",
+            "tick": 31
+          }
+        ],
+        "external": [],
+        "tick": 31
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-16",
+            "target": "B",
+            "tick": 32
+          }
+        ],
+        "external": [],
+        "tick": 32
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-16",
+            "target": "A",
+            "tick": 33
+          }
+        ],
+        "external": [],
+        "tick": 33
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-17",
+            "target": "B",
+            "tick": 34
+          }
+        ],
+        "external": [],
+        "tick": 34
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-17",
+            "target": "A",
+            "tick": 35
+          }
+        ],
+        "external": [],
+        "tick": 35
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-18",
+            "target": "B",
+            "tick": 36
+          }
+        ],
+        "external": [],
+        "tick": 36
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-18",
+            "target": "A",
+            "tick": 37
+          }
+        ],
+        "external": [],
+        "tick": 37
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "A",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "gift-19",
+            "target": "B",
+            "tick": 38
+          }
+        ],
+        "external": [],
+        "tick": 38
+      },
+      {
+        "action_budget": 1,
+        "actions": [
+          {
+            "actor": "B",
+            "amount": 1,
+            "kind": "transfer",
+            "principal": "two-agent-owner",
+            "request_id": "return-19",
+            "target": "A",
+            "tick": 39
+          }
+        ],
+        "external": [],
+        "tick": 39
+      }
+    ],
+    "known_loss": 0,
+    "mode": "unsafe_timeout",
+    "peak_actual_loss_plus_inflight": 1,
+    "peak_booked_exposure": 2,
+    "pending": 2,
+    "policy_observations": 10,
+    "recover_at": 10,
+    "recovered_receipts": 0,
+    "replay_verified": true,
+    "returned": 20,
+    "rounds": 20,
+    "scenario": "cooperative",
+    "schema": "openworld.two-agents.receipts.v0",
+    "sent": 20,
+    "trace": [
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 1,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-2",
+        "pending": 1,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 1,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 1,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 1,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 2,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-4",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 3,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 4,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-6",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 5,
+        "timeout_releases": 1
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 6,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-8",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 7,
+        "timeout_releases": 1
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 8,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-10",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 9,
+        "timeout_releases": 1
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 10,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-12",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 11,
+        "timeout_releases": 1
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 12,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-14",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 13,
+        "timeout_releases": 1
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 14,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-16",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 15,
+        "timeout_releases": 1
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 16,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-18",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 17,
+        "timeout_releases": 1
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 18,
+        "timeout_releases": 0
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 0,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "due-round-20",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 19,
+        "timeout_releases": 1
+      },
+      {
+        "actual_loss": 0,
+        "balances": {
+          "A": 8,
+          "B": 0
+        },
+        "booked_exposure": 2,
+        "delivered": 1,
+        "gift": true,
+        "known_loss": 0,
+        "notification": "dropped",
+        "pending": 2,
+        "recovered_receipts": 0,
+        "return": true,
+        "round": 20,
+        "timeout_releases": 0
+      }
+    ],
+    "unsafe_releases": 8
+  }
+]

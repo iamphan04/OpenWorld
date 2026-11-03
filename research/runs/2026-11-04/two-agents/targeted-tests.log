@@ -1,0 +1,15 @@
+test_cli_json_and_bounded_input_validation (test_two_agents.TwoAgentTests.test_cli_json_and_bounded_input_validation) ... ok
+test_full_export_replays_using_only_recorded_inputs (test_two_agents.TwoAgentTests.test_full_export_replays_using_only_recorded_inputs) ... ok
+test_hostile_partner_cannot_create_receipts_and_safe_agents_stop_at_four (test_two_agents.TwoAgentTests.test_hostile_partner_cannot_create_receipts_and_safe_agents_stop_at_four) ... ok
+test_journal_without_committed_event_is_not_a_receipt (test_two_agents.TwoAgentTests.test_journal_without_committed_event_is_not_a_receipt) ... ok
+test_late_duplicate_notification_does_not_double_release (test_two_agents.TwoAgentTests.test_late_duplicate_notification_does_not_double_release) ... ok
+test_lost_cooperative_notices_lock_baseline_but_receipts_restore_activity (test_two_agents.TwoAgentTests.test_lost_cooperative_notices_lock_baseline_but_receipts_restore_activity) ... ok
+test_no_counterfactual_feedback_after_agent_stops (test_two_agents.TwoAgentTests.test_no_counterfactual_feedback_after_agent_stops) ... ok
+test_no_missing_feedback_means_same_world_for_all_modes (test_two_agents.TwoAgentTests.test_no_missing_feedback_means_same_world_for_all_modes) ... ok
+test_recovery_does_not_replenish_permanent_loss_budget (test_two_agents.TwoAgentTests.test_recovery_does_not_replenish_permanent_loss_budget) ... ok
+test_timeout_negative_control_hides_real_loss (test_two_agents.TwoAgentTests.test_timeout_negative_control_hides_real_loss) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.171s
+
+OK

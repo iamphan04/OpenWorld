@@ -1,0 +1,144 @@
+{
+  "source_commit": "29a68008d5718f831eed4a9c008395953f03465e",
+  "python": "3.14.7 (main, Aug  8 2026, 21:15:19)  [MINGW GCC UCRT 16.2.0 64 bit (AMD64)]",
+  "sqlite": "3.53.4",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "source_sha256": {
+    "examples/two_agents.py": "3b9b5beaaf6d8bc786a00790e749050bbcac3a89e280e4880d7b54223fdc6d39",
+    "tests/test_two_agents.py": "8736289f8031a4e8f9c49baf0ff268eb0e7ba86efe9cf60fe6311b06531d1759",
+    "docs/experiments/TWO-AGENT-RECEIPT-SIMULATION.md": "54e5e02a5aaaa266361edd257e7433ece9b6341d51024fcae751cd15e69cbd63",
+    "README.md": "0b1328562c2924c9d1e2f90013027b41ccc952f3da9a88a8c11206fc0a026b03"
+  },
+  "checks": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "run": 472,
+      "skipped": 6,
+      "expected_failures": 2,
+      "unexpected_failures": 0,
+      "seconds": 91.256,
+      "log": "full-tests.log"
+    },
+    {
+      "command": "python -m unittest discover -s tests -p test_two_agents.py -v",
+      "exit_code": 0,
+      "run": 10,
+      "log": "targeted-tests.log"
+    },
+    {
+      "command": "python scripts/check_repository.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python -m py_compile examples/two_agents.py tests/test_two_agents.py",
+      "exit_code": 0
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0
+    }
+  ],
+  "case_commands": [
+    "python examples/two_agents.py --scenario cooperative --summary-only --out research/runs/2026-11-04/two-agents/cooperative.json",
+    "python examples/two_agents.py --scenario hostile --summary-only --out research/runs/2026-11-04/two-agents/hostile.json",
+    "python examples/two_agents.py --scenario recovery --summary-only --out research/runs/2026-11-04/two-agents/recovery.json"
+  ],
+  "nine_exported_cases_checked": true,
+  "summary": {
+    "cooperative": {
+      "notifications": {
+        "sent": 8,
+        "returned": 8,
+        "actual_loss": 0,
+        "pending": 4,
+        "peak_actual_loss_plus_inflight": 1,
+        "recovered_receipts": 0,
+        "replay_verified": true
+      },
+      "reconcile": {
+        "sent": 20,
+        "returned": 20,
+        "actual_loss": 0,
+        "pending": 1,
+        "peak_actual_loss_plus_inflight": 1,
+        "recovered_receipts": 9,
+        "replay_verified": true
+      },
+      "unsafe_timeout": {
+        "sent": 20,
+        "returned": 20,
+        "actual_loss": 0,
+        "pending": 2,
+        "peak_actual_loss_plus_inflight": 1,
+        "recovered_receipts": 0,
+        "replay_verified": true
+      }
+    },
+    "hostile": {
+      "notifications": {
+        "sent": 4,
+        "returned": 0,
+        "actual_loss": 4,
+        "pending": 2,
+        "peak_actual_loss_plus_inflight": 4,
+        "recovered_receipts": 0,
+        "replay_verified": true
+      },
+      "reconcile": {
+        "sent": 4,
+        "returned": 0,
+        "actual_loss": 4,
+        "pending": 2,
+        "peak_actual_loss_plus_inflight": 4,
+        "recovered_receipts": 0,
+        "replay_verified": true
+      },
+      "unsafe_timeout": {
+        "sent": 6,
+        "returned": 0,
+        "actual_loss": 6,
+        "pending": 0,
+        "peak_actual_loss_plus_inflight": 6,
+        "recovered_receipts": 0,
+        "replay_verified": true
+      }
+    },
+    "recovery": {
+      "notifications": {
+        "sent": 4,
+        "returned": 0,
+        "actual_loss": 4,
+        "pending": 2,
+        "peak_actual_loss_plus_inflight": 4,
+        "recovered_receipts": 0,
+        "replay_verified": true
+      },
+      "reconcile": {
+        "sent": 4,
+        "returned": 0,
+        "actual_loss": 4,
+        "pending": 2,
+        "peak_actual_loss_plus_inflight": 4,
+        "recovered_receipts": 0,
+        "replay_verified": true
+      },
+      "unsafe_timeout": {
+        "sent": 6,
+        "returned": 0,
+        "actual_loss": 6,
+        "pending": 0,
+        "peak_actual_loss_plus_inflight": 6,
+        "recovered_receipts": 0,
+        "replay_verified": true
+      }
+    }
+  },
+  "artifact_sha256": {
+    "cooperative.json": "a066112e60af18ca877f63edd1c963350f49021d0e225001df55ed205e474019",
+    "full-tests.log": "6070ee6782ef6097250d4b0c87cb595ef8c60815505d5563e07e7aaf106b5bcb",
+    "hostile.json": "93d0350eb9f4658986f90907ff3a57363240c2e042e22cc76d674615c66b842e",
+    "recovery.json": "38fcc81165f55761736867cb310ff658873a9730a525a3ef5dd0755d96adf41c",
+    "targeted-tests.log": "90be16eef32719196681584e891e96c2a759f001bb7a1c1c76216231e65a2ab6"
+  }
+}
